@@ -4,7 +4,7 @@ export const MarqueeContainer = styled.div`
   background: linear-gradient(180deg, #040d21 0%, #040d21 100%);
   overflow-x: hidden;
   width: 100%;
-  margin: 2em 0;
+  margin: 2em 0 0 0;
 `;
 
 export const MarqueeInner = styled.div`

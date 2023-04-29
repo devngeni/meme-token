@@ -4,6 +4,7 @@ import {
   EconomicsSection,
   LandingSection,
   MacqueeSection,
+  StatisticSection,
 } from "@/components";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <LandingSection />
       <AboutSection />
       <EconomicsSection />
+      <StatisticSection />
       <MacqueeSection />
     </Layout>
   );
