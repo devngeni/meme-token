@@ -24,7 +24,7 @@ export default function LandingSection() {
             <LandingTitle>You can claim BOB PEPE AI now!</LandingTitle>
             <LandingText>
               BOB PEPE AI is excited to announce that a whopping 210 quadrillion
-              AIDOGE tokens are up for grabs for those who participated in the
+              BOB tokens are up for grabs for those who participated in the
               ARB airdrop. Don't miss out on this opportunity to claim your
               share of the tokens!
               <TextBreak />
