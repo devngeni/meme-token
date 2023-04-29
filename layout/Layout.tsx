@@ -1,3 +1,4 @@
+import { Footer } from "@/components";
 import Head from "next/head";
 
 interface LayoutProps {
@@ -14,6 +15,7 @@ export default function Layout({ children }: LayoutProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>{children}</main>
+      <Footer />
     </>
   );
 }

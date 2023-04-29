@@ -10,7 +10,7 @@ export default function Line() {
       <path
         d="M1 1L0.999982 404"
         stroke="url(#paint0_linear_18_1909)"
-        stroke-width="2"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeDasharray="21 21"
       ></path>

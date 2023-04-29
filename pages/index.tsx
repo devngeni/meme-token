@@ -1,5 +1,10 @@
 import { Layout } from "@/layout";
-import { AboutSection, EconomicsSection, LandingSection } from "@/components";
+import {
+  AboutSection,
+  EconomicsSection,
+  LandingSection,
+  MacqueeSection,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -7,6 +12,7 @@ export default function Home() {
       <LandingSection />
       <AboutSection />
       <EconomicsSection />
+      <MacqueeSection />
     </Layout>
   );
 }
