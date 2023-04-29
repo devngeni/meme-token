@@ -36,7 +36,7 @@ export default function Technomics() {
             0,1,
             480,80 Z"
             role="img"
-            style={{margin: "auto"}}
+            style={{ margin: "auto" }}
           ></path>
         </g>
         <g className="recharts-layer recharts-pie-sector" tabIndex={-1}>
@@ -59,7 +59,7 @@ export default function Technomics() {
             0,1,
             365.87321804458156,162.9179606750063 Z"
             role="img"
-            style={{margin: "auto"}}
+            style={{ margin: "auto" }}
           ></path>
         </g>
         <g className="recharts-layer recharts-pie-sector" tabIndex={-1}>
@@ -82,7 +82,7 @@ export default function Technomics() {
             0,1,
             409.4657697249032,297.0820393249937 Z"
             role="img"
-            style={{margin: "auto"}}
+            style={{ margin: "auto" }}
           ></path>
         </g>
         <g className="recharts-layer recharts-pie-sector" tabIndex={-1}>
@@ -105,7 +105,7 @@ export default function Technomics() {
             0,1,
             550.5342302750968,297.08203932499373 Z"
             role="img"
-            style={{margin: "auto"}}
+            style={{ margin: "auto" }}
           ></path>
         </g>
         <g className="recharts-layer recharts-pie-sector" tabIndex={-1}>
@@ -128,7 +128,7 @@ export default function Technomics() {
             0,1,
             594.1267819554184,162.91796067500633 Z"
             role="img"
-            style={{margin: "auto"}}
+            style={{ margin: "auto" }}
           ></path>
         </g>
         <g className="recharts-layer recharts-pie-sector" tabIndex={-1}>
@@ -151,7 +151,7 @@ export default function Technomics() {
             0,1,
             528.808397169096,90.37454508288789 Z"
             role="img"
-            style={{margin: "auto"}}
+            style={{ margin: "auto" }}
           ></path>
         </g>
         <g className="recharts-layer recharts-pie-labels">
@@ -166,7 +166,7 @@ export default function Technomics() {
               color="rgba(17,119,232,1)"
               className="recharts-curve recharts-pie-label-line"
               d="M391.832,78.647L380.077,62.467"
-              style={{margin: "auto"}}
+              style={{ margin: "auto" }}
             ></path>
             <g>
               <path
@@ -214,7 +214,7 @@ export default function Technomics() {
               color="rgba(211,240,50,1)"
               className="recharts-curve recharts-pie-label-line"
               d="M337.342,246.353L318.32,252.533"
-              style={{margin: "auto"}}
+              style={{ margin: "auto" }}
             ></path>
             <g>
               <path
@@ -247,7 +247,7 @@ export default function Technomics() {
                 textAnchor="end"
                 fill="#999"
               >
-                Buy ARB
+                Buy BOBAI
               </text>
             </g>
           </g>
@@ -262,7 +262,7 @@ export default function Technomics() {
               color="rgba(246,119,18,1)"
               className="recharts-curve recharts-pie-label-line"
               d="M480,350L480,370"
-              style={{margin: "auto"}}
+              style={{ margin: "auto" }}
             ></path>
             <g>
               <path
@@ -310,7 +310,7 @@ export default function Technomics() {
               color="rgba(140,48,250,1)"
               className="recharts-curve recharts-pie-label-line"
               d="M622.658,246.353L641.68,252.533"
-              style={{margin: "auto"}}
+              style={{ margin: "auto" }}
             ></path>
             <g>
               <path
@@ -343,7 +343,7 @@ export default function Technomics() {
                 textAnchor="start"
                 fill="#999"
               >
-                Dividends to AIDOGE Holders
+                Dividends to BOB Holders
               </text>
             </g>
           </g>
@@ -358,7 +358,7 @@ export default function Technomics() {
               color="rgba(118,252,211,1)"
               className="recharts-curve recharts-pie-label-line"
               d="M591.472,99.63L606.335,86.248"
-              style={{margin: "auto"}}
+              style={{ margin: "auto" }}
             ></path>
             <g>
               <path
@@ -391,7 +391,7 @@ export default function Technomics() {
                 textAnchor="start"
                 fill="#999"
               >
-                Rewards to AIDOGE/ETH LP
+                Rewards to BOBAI/ETH LP
               </text>
             </g>
           </g>
@@ -406,7 +406,7 @@ export default function Technomics() {
               color="rgba(255,196,57,1)"
               className="recharts-curve recharts-pie-label-line"
               d="M511.187,53.278L515.345,33.715"
-              style={{margin: "auto"}}
+              style={{ margin: "auto" }}
             ></path>
             <g>
               <path
