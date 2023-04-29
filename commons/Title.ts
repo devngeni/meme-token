@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Title = styled.h1`
+  width: 100%;
   font-weight: 700;
   font-size: 49px;
   line-height: 63px;
@@ -9,8 +10,15 @@ export const Title = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-align: center;
   text-fill-color: transparent;
   font-variation-settings: "slnt" 0;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 2px;
+  }
 `;
 
 export const Headers = styled.h1`
@@ -21,11 +29,18 @@ export const Headers = styled.h1`
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+  margin-bottom: 2em;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
 `;
 
 export const Text = styled.p`
   color: #fff;
   font-weight: 400;
+  font-size: 20px;
 `;
 
 export const TextBreak = styled.br``;

@@ -4,15 +4,9 @@ import styled from "styled-components";
 export const LandingWrapper = styled.div`
   width: 100%;
   height: 100vh;
-`;
-export const LandingContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
   z-index: 1;
+  margin: 0;
   &::before {
     content: "";
     position: absolute;
@@ -23,6 +17,14 @@ export const LandingContainer = styled.div`
     z-index: -1;
   }
 `;
+export const LandingContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const TextWrapper = styled.div`
   display: flex;
@@ -30,12 +32,24 @@ export const TextWrapper = styled.div`
   justify-content: space-evenly;
   gap: 2rem;
   width: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 `;
 export const TextBody = styled.div`
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  @media (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 `;
 export const BodyImage = styled.div`
   width: 30%;
@@ -65,6 +79,10 @@ export const BodyImage = styled.div`
     border-radius: 5%;
     z-index: -1;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 1rem;
+  }
 `;
 
 export const LandingButton = styled.button`
@@ -83,17 +101,27 @@ export const LandingButton = styled.button`
     background-blend-mode: lighten, normal;
     transition: all 0.5s ease-in-out;
   }
+  @media (max-width: 768px) {
+    width: 150px;
+  }
 `;
 export const LandingTitle = styled(Title)`
   font-size: 2rem;
   line-height: 2rem;
   width: 100%;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
 `;
 export const LandingText = styled(Text)`
   width: 100%;
   text-align: center;
   background-blend-mode: lighten, normal;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `;
 export const ButtonWrapper = styled.div`
   display: flex;
@@ -134,4 +162,8 @@ export const TextCard = styled.div`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    width: 70%;
+  }
 `;
