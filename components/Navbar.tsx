@@ -7,8 +7,11 @@ import {
   NavbarTitle,
   NavbarWrapper,
 } from "./Navbar.styles";
-
+import { toast } from "react-hot-toast";
 export default function Navbar() {
+  const connectToWallet = () => {
+    toast.success("Coming soon...");
+  };
   return (
     <NavbarWrapper>
       <NavbarContainer>
@@ -17,13 +20,23 @@ export default function Navbar() {
           <NavbarMenuItemLink>
             <span>AirDrop</span>
           </NavbarMenuItemLink>
-          <NavbarMenuItemLink>Earn</NavbarMenuItemLink>
-          <NavbarMenuItemLink>LP</NavbarMenuItemLink>
-          <NavbarMenuItemLink>LuckyDrop</NavbarMenuItemLink>
-          <NavbarMenuItemLink>Dao</NavbarMenuItemLink>
+          <NavbarMenuItemLink onClick={() => connectToWallet()}>
+            Earn
+          </NavbarMenuItemLink>
+          <NavbarMenuItemLink onClick={() => connectToWallet()}>
+            LP
+          </NavbarMenuItemLink>
+          <NavbarMenuItemLink onClick={() => connectToWallet()}>
+            LuckyDrop
+          </NavbarMenuItemLink>
+          <NavbarMenuItemLink onClick={() => connectToWallet()}>
+            Dao
+          </NavbarMenuItemLink>
         </NavbarMenu>
         <NavbarMenuItem>
-          <NavbarButton>Connect Wallet</NavbarButton>
+          <NavbarButton onClick={() => connectToWallet()}>
+            Connect Wallet
+          </NavbarButton>
         </NavbarMenuItem>
       </NavbarContainer>
     </NavbarWrapper>

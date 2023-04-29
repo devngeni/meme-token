@@ -22,7 +22,7 @@ export default function Footer() {
         <FooterBody>
           <FooterTile>🚀BOB PEPE AI</FooterTile>
           <FooterText>
-            BOB PEPE AI is a community driven, fair launched DeFi Token. Three
+            BOB PEPE AI is a community driven, fair launched DeFi Token.
           </FooterText>
         </FooterBody>
         <FooterContent>

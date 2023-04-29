@@ -12,8 +12,11 @@ import {
   TextCard,
   TextWrapper,
 } from "./Landing.Style";
-
+import { toast } from "react-hot-toast";
 export default function LandingSection() {
+  const connectToWallet = () => {
+    toast.success("Coming soon...");
+  };
   return (
     <LandingWrapper>
       <LandingContainer>
@@ -23,15 +26,17 @@ export default function LandingSection() {
             <LandingTitle>You can claim BOB PEPE AI now!</LandingTitle>
             <LandingText>
               BOB PEPE AI is excited to announce that a whopping 210 quadrillion
-              BOB tokens are up for grabs for those who participated in the
-              ARB airdrop. Don&#39;t miss out on this opportunity to claim your
+              BOB tokens are up for grabs for those who participated in the ARB
+              airdrop. Don&#39;t miss out on this opportunity to claim your
               share of the tokens!
               <TextBreak />
             </LandingText>
             <TextCard>🔥31 days will be burned🔥</TextCard>
             <ButtonWrapper>
-              <Button>Claim Airdrop</Button>
-              <LandingButton>Invite</LandingButton>
+              <Button onClick={() => connectToWallet()}>Claim Airdrop</Button>
+              <LandingButton onClick={() => connectToWallet()}>
+                Invite
+              </LandingButton>
             </ButtonWrapper>
           </BodyImage>
           <TextBody>
