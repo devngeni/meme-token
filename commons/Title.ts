@@ -29,7 +29,6 @@ export const Headers = styled.h1`
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  margin-bottom: 2em;
   @media (max-width: 768px) {
     font-size: 30px;
     line-height: 40px;

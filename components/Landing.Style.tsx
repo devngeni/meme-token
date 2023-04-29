@@ -53,7 +53,7 @@ export const TextBody = styled.div`
 `;
 export const BodyImage = styled.div`
   width: 30%;
-  height: 50vh;
+  height: 60vh;
   position: relative;
   opacity: 1;
   display: flex;
