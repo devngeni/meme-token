@@ -59,7 +59,7 @@ export const StaticAdress = styled.div`
   color: rgb(23, 243, 221);
   font-size: 1.5rem;
   @media (max-width: 768px) {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     flex-wrap: wrap;
   }
 `;

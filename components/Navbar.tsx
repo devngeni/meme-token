@@ -17,9 +17,7 @@ export default function Navbar() {
       <NavbarContainer>
         <NavbarTitle>🚀BOB PEPE AI</NavbarTitle>
         <NavbarMenu>
-          <NavbarMenuItemLink>
-            <span>AirDrop</span>
-          </NavbarMenuItemLink>
+          <NavbarMenuItemLink onClick={() => connectToWallet()}>AirDrop</NavbarMenuItemLink>
           <NavbarMenuItemLink onClick={() => connectToWallet()}>
             Earn
           </NavbarMenuItemLink>
