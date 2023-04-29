@@ -1,4 +1,4 @@
-import { Footer } from "@/components";
+import { Footer, Navbar } from "@/components";
 import Head from "next/head";
 
 interface LayoutProps {
@@ -14,6 +14,7 @@ export default function Layout({ children }: LayoutProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
       <main>{children}</main>
       <Footer />
     </>

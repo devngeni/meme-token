@@ -16,6 +16,9 @@ export const LandingWrapper = styled.div`
     background-size: contain;
     z-index: -1;
   }
+  @media (max-width: 768px) {
+    height: max-content;
+  }
 `;
 export const LandingContainer = styled.div`
   width: 100%;
@@ -24,6 +27,11 @@ export const LandingContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    padding-top: 15%;
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 export const TextWrapper = styled.div`

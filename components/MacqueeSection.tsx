@@ -6,7 +6,7 @@ import {
   MarqueeTitle,
 } from "./Marquee.Styles";
 
-export default function MacqueeSection() {
+export default function MarqueeSection() {
   const marqueeData = [
     {
       title: "492929.12",
@@ -37,15 +37,20 @@ export default function MacqueeSection() {
       text: "Lucky Drop Reward $ARB",
     },
   ];
+
+  const renderMarqueeItems = () =>
+    marqueeData.map((item, index) => (
+      <MarqueeItem key={index} className="marquee__content">
+        <MarqueeTitle>{item.title}</MarqueeTitle>
+        <MarqueeText>{item.text}</MarqueeText>
+      </MarqueeItem>
+    ));
+
   return (
     <MarqueeContainer>
       <MarqueeInner>
-        {marqueeData.map((item, index) => (
-          <MarqueeItem key={index} className="marquee__content">
-            <MarqueeTitle>{item.title}</MarqueeTitle>
-            <MarqueeText>{item.text}</MarqueeText>
-          </MarqueeItem>
-        ))}
+        {renderMarqueeItems()}
+        {renderMarqueeItems()}
       </MarqueeInner>
     </MarqueeContainer>
   );

@@ -42,7 +42,7 @@ export default function Technomics() {
         <g className="recharts-layer recharts-pie-sector" tabIndex={-1}>
           <path
             tabIndex={-1}
-            name="Buy ARB"
+            name="Buy BOB"
             cx="480"
             cy="200"
             strokeWidth="0"
@@ -88,7 +88,7 @@ export default function Technomics() {
         <g className="recharts-layer recharts-pie-sector" tabIndex={-1}>
           <path
             tabIndex={-1}
-            name="Dividends to AIDOGE Holders"
+            name="Dividends to BOB Holders"
             cx="480"
             cy="200"
             strokeWidth="0"
@@ -111,7 +111,7 @@ export default function Technomics() {
         <g className="recharts-layer recharts-pie-sector" tabIndex={-1}>
           <path
             tabIndex={-1}
-            name="Rewards to AIDOGE/ETH LP"
+            name="Rewards to BOB/ETH LP"
             cx="480"
             cy="200"
             strokeWidth="0"

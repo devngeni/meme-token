@@ -11,6 +11,7 @@ import {
   AboutText,
   AboutTitle,
   AboutWrapper,
+  LineWrapper,
 } from "./About.styles";
 import Line from "@/public/Lines";
 import Technomics from "@/public/Technomics";
@@ -41,7 +42,9 @@ export default function AboutSection() {
               <AboutCard>
                 <AboutText dangerouslySetInnerHTML={{ __html: data.title }} />
               </AboutCard>
-              <Line />
+              <LineWrapper>
+                <Line />
+              </LineWrapper>
             </AboutContent>
           ))}
         </AboutBody>

@@ -17,7 +17,6 @@ export default function LandingSection() {
   return (
     <LandingWrapper>
       <LandingContainer>
-        <Title>BOB PEPE AI</Title>
         <Headers>proudly launched on Arbitram</Headers>
         <TextWrapper>
           <BodyImage>

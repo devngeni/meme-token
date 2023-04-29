@@ -14,6 +14,16 @@ export const FooterContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 3rem;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
 `;
 export const FooterBody = styled.div`
   display: flex;
@@ -35,12 +45,16 @@ export const FooterText = styled.p`
 export const FooterHeader = styled.div`
   color: #fff;
   font-size: 1.5rem;
-  height: 12%;
 `;
 export const FooterContent = styled.div`
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 export const FooterLink = styled.div`
   cursor: pointer;
