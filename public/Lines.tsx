@@ -23,8 +23,8 @@ export default function Line() {
           y2="404"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0"></stop>
-          <stop offset="0.494748" stop-color="white"></stop>
+          <stop stopColor="white" stopOpacity="0"></stop>
+          <stop offset="0.494748" stopColor="white"></stop>
           <stop offset="1" stopColor="white" stopOpacity="0"></stop>
         </linearGradient>
       </defs>

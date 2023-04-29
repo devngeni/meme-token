@@ -4,12 +4,16 @@ import {
   AboutCard,
   AboutContainer,
   AboutContent,
+  AboutGrid,
   AboutHeader,
+  AboutLeftItem,
+  AboutRightItem,
   AboutText,
   AboutTitle,
   AboutWrapper,
 } from "./About.styles";
 import Line from "@/public/Lines";
+import Technomics from "@/public/Technomics";
 
 export default function AboutSection() {
   const aboutData = [
