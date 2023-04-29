@@ -49,7 +49,7 @@ export default function Footer() {
         </FooterContent>
         <FooterBody>
           <FooterText>
-            The secret weapon that humans have over AI is "intuition." Your
+            The secret weapon that humans have over AI is &#34;intuition.&#34; Your
             intuition tells you to join our great community.
           </FooterText>
           <FooterIconWrapper>

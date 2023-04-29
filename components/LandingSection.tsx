@@ -25,7 +25,7 @@ export default function LandingSection() {
             <LandingText>
               BOB PEPE AI is excited to announce that a whopping 210 quadrillion
               BOB tokens are up for grabs for those who participated in the
-              ARB airdrop. Don't miss out on this opportunity to claim your
+              ARB airdrop. Don&#39;t miss out on this opportunity to claim your
               share of the tokens!
               <TextBreak />
             </LandingText>
@@ -43,7 +43,7 @@ export default function LandingSection() {
             </Text>
             <Text>
               Say goodbye to mundane investments and hello to the excitement of
-              BOB PEPE AI. We're here to make investing an adrenaline-fueled
+              BOB PEPE AI. We&#39;re here to make investing an adrenaline-fueled
               ride
             </Text>
           </TextBody>
