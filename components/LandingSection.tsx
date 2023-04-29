@@ -28,7 +28,7 @@ export default function LandingSection() {
               BOB PEPE AI is excited to announce that a whopping 210 quadrillion
               BOB tokens are up for grabs for those who participated in the ARB
               airdrop. Don&#39;t miss out on this opportunity to claim your
-              share of the tokens!
+              share of the tokens! tokens that have not been claimed will be
               <TextBreak />
             </LandingText>
             <TextCard>🔥31 days will be burned🔥</TextCard>
