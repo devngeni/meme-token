@@ -247,7 +247,7 @@ export default function Technomics() {
                 textAnchor="end"
                 fill="#999"
               >
-                Buy BOBAI
+                Buy BOB
               </text>
             </g>
           </g>
@@ -391,7 +391,7 @@ export default function Technomics() {
                 textAnchor="start"
                 fill="#999"
               >
-                Rewards to BOBAI/ETH LP
+                Rewards to BOB/ETH LP
               </text>
             </g>
           </g>
