@@ -10,7 +10,7 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <Head>
         <title>Meme Tokens</title>
-        <meta name="description" content="You gat Liquidity you gat jokes" />
+        <meta name="description" content="Some Make memes Some Make Millions" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
