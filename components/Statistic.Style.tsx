@@ -34,7 +34,7 @@ export const StaticBody = styled.div`
   justify-content: space-evenly;
   padding: 2rem;
   @media (max-width: 768px) {
-    padding: 10px;
+    padding: 0px;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
