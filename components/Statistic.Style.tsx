@@ -34,8 +34,11 @@ export const StaticBody = styled.div`
   justify-content: space-evenly;
   padding: 2rem;
   @media (max-width: 768px) {
-    padding 10px;
     width: 100%;
+    padding: 0;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 `;
 export const StaticTitle = styled.div`

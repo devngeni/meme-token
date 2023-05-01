@@ -12,12 +12,14 @@ export const LandingWrapper = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("/Wire.jpg") #000;
     background-size: contain;
     z-index: -1;
   }
   @media (max-width: 768px) {
     height: max-content;
+    &::before {
+    background: url("/Wire.jpg") #000;
+    }
   }
 `;
 export const LandingContainer = styled.div`

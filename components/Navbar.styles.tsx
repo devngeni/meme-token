@@ -39,7 +39,7 @@ export const NavbarMenu = styled.div`
   flex-direction: row;
   gap: 2rem;
   align-items: center;
-  width: 40%;
+  width: 30%;
   @media (max-width: 768px) {
     display: none;
   }
@@ -88,19 +88,15 @@ export const NavbarMenuItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   @media (max-width: 768px) {
     width: 50%;
   }
 `;
 export const NavbarButton = styled.button`
-  width: 220px;
-  height: 50px;
-  background: linear-gradient(
-    270deg,
-    rgb(156, 81, 255) 0%,
-    rgb(85, 161, 255) 50%,
-    rgb(156, 81, 255) 100%
-  );
+  width: 120px;
+  height: 40px;
+  background: #3396ff;
   color: #fff;
   border: none;
   border-radius: 5px;

@@ -139,6 +139,7 @@ export const AboutListWrapper = styled.ul`
   font-size: 2rem;
   @media (max-width: 768px) {
     font-size: 1rem;
+    width: 90%;
   }
 `;
 export const AboutList = styled.li`
