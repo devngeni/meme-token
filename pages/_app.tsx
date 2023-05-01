@@ -5,7 +5,6 @@ import {
   w3mProvider,
 } from "@web3modal/ethereum";
 import "@/styles/globals.css";
-import { Web3Provider } from "@/web3";
 import type { AppProps } from "next/app";
 import { Toaster } from "react-hot-toast";
 import { configureChains, createClient, WagmiConfig } from "wagmi";

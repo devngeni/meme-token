@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { useWeb3 } from "@/web3";
 import {
   NavbarContainer,
   NavbarMenu,
@@ -13,15 +12,6 @@ import { Web3Button, Web3NetworkSwitch } from "@web3modal/react";
 import GlobalContext from "@/context/GlobalContext";
 export default function Navbar() {
   const { isMobile } = useContext(GlobalContext);
-  const { web3, connectWallet, disconnectWallet } = useWeb3();
-
-  const handleClick = async () => {
-    if (web3) {
-      disconnectWallet();
-    } else {
-      await connectWallet();
-    }
-  };
   const connectToWallet = () => {
     toast.success("Coming soon...");
   };
