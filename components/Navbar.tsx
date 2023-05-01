@@ -1,3 +1,4 @@
+import { useWeb3 } from "@/web3";
 import {
   NavbarButton,
   NavbarContainer,
@@ -9,6 +10,15 @@ import {
 } from "./Navbar.styles";
 import { toast } from "react-hot-toast";
 export default function Navbar() {
+  const { web3, connectWallet, disconnectWallet } = useWeb3();
+
+  const handleClick = async () => {
+    if (web3) {
+      disconnectWallet();
+    } else {
+      await connectWallet();
+    }
+  };
   const connectToWallet = () => {
     toast.success("Coming soon...");
   };
@@ -17,7 +27,9 @@ export default function Navbar() {
       <NavbarContainer>
         <NavbarTitle>🚀BOB PEPE AI</NavbarTitle>
         <NavbarMenu>
-          <NavbarMenuItemLink onClick={() => connectToWallet()}>AirDrop</NavbarMenuItemLink>
+          <NavbarMenuItemLink onClick={() => connectToWallet()}>
+            AirDrop
+          </NavbarMenuItemLink>
           <NavbarMenuItemLink onClick={() => connectToWallet()}>
             Earn
           </NavbarMenuItemLink>
@@ -32,8 +44,8 @@ export default function Navbar() {
           </NavbarMenuItemLink>
         </NavbarMenu>
         <NavbarMenuItem>
-          <NavbarButton onClick={() => connectToWallet()}>
-            Connect Wallet
+          <NavbarButton onClick={() => handleClick()}>
+            {web3 ? "Disconnect Wallet" : "Connect Wallet"}
           </NavbarButton>
         </NavbarMenuItem>
       </NavbarContainer>

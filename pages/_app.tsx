@@ -1,11 +1,14 @@
 import "@/styles/globals.css";
+import { Web3Provider } from "@/web3";
 import type { AppProps } from "next/app";
 import { Toaster } from "react-hot-toast";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Component {...pageProps} />
+      <Web3Provider>
+        <Component {...pageProps} />
+      </Web3Provider>
       <Toaster
         toastOptions={{
           style: {

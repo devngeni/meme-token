@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@openzeppelin/contracts": "^4.8.3",
     "@types/node": "18.16.1",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "@types/styled-components": "^5.1.26",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "@web3modal/react": "^2.3.7",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
     "next": "13.3.1",
@@ -20,6 +25,8 @@
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",
     "styled-components": "^5.3.10",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "web3": "^1.9.0",
+    "web3modal": "^1.9.12"
   }
 }

@@ -386,7 +386,7 @@ export default function Technomics() {
               </text>
               <text
                 x="685.766068585931"
-                y="79.55649085540547"
+                y="89.55649085540547"
                 dy="18"
                 textAnchor="start"
                 fill="#999"
