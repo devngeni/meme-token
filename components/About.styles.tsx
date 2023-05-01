@@ -98,9 +98,7 @@ export const AboutText = styled.div`
 `;
 export const LineWrapper = styled.div`
   @media (max-width: 768px) {
-    transform: rotate(90deg);
-    height: 5vh;
-    width: 100%;
+    display: none;
   }
 `;
 export const AboutGrid = styled.div`

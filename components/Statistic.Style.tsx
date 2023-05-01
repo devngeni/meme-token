@@ -34,11 +34,10 @@ export const StaticBody = styled.div`
   justify-content: space-evenly;
   padding: 2rem;
   @media (max-width: 768px) {
-    width: 100%;
-    padding: 0;
-    align-content: center;
+    padding: 10px;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
   }
 `;
 export const StaticTitle = styled.div`
@@ -55,15 +54,26 @@ export const TextWrapper = styled.div`
   width: 80%;
   @media (max-width: 768px) {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
   }
 `;
-export const StaticText = styled.div``;
+export const StaticText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+`;
 export const StaticAdress = styled.div`
   color: rgb(23, 243, 221);
   font-size: 1.5rem;
   @media (max-width: 768px) {
-    font-size: 0.7rem;
-    flex-wrap: wrap;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 export const StaticImage = styled.div`

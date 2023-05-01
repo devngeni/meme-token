@@ -22,7 +22,6 @@ export const FooterContainer = styled.div`
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    padding: 1rem;
   }
 `;
 export const FooterBody = styled.div`
