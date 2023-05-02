@@ -30,10 +30,10 @@ export default function Navbar() {
             LP
           </NavbarMenuItemLink>
           <NavbarMenuItemLink onClick={() => connectToWallet()}>
-            LuckyDrop
+            Buy
           </NavbarMenuItemLink>
           <NavbarMenuItemLink onClick={() => connectToWallet()}>
-            Dao
+            NFT
           </NavbarMenuItemLink>
         </NavbarMenu>
         {isMobile ? (

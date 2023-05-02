@@ -33,13 +33,17 @@ export const Headers = styled.h1`
     font-size: 30px;
     line-height: 40px;
     text-align: center;
+    padding: 0 10px;
   }
 `;
 
 export const Text = styled.p`
   color: #fff;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.5rem;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 export const TextBreak = styled.br``;

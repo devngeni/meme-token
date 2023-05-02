@@ -13,6 +13,7 @@ export const AboutWrapper = styled.div`
   z-index: 1;
   margin: 20px 0;
   opacity: 1;
+  top: 10%;
   &::before {
     content: "";
     position: absolute;
@@ -28,6 +29,17 @@ export const AboutWrapper = styled.div`
   }
   @media (max-width: 768px) {
     height: max-content;
+    padding-bottom: 2rem;
+    &::before {
+      top: 10%;
+    }
+  }
+`;
+export const EconomicsWrapper = styled(AboutWrapper)`
+  @media (max-width: 768px) {
+    &::before {
+      top: 0;
+    }
   }
 `;
 export const AboutContainer = styled.div`
@@ -46,6 +58,8 @@ export const AboutTitle = styled(Title)`
   text-decoration: underline;
   @media (max-width: 768px) {
     text-align: center;
+    font-size: 2rem;
+    padding: 20px 0;
   }
 `;
 export const AboutHeader = styled(Headers)`
@@ -55,6 +69,11 @@ export const AboutHeader = styled(Headers)`
   background-position: left;
   background-size: contain;
   width: 100%;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 20px 0;
+  }
 `;
 export const AboutBody = styled.div`
   display: flex;

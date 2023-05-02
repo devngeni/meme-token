@@ -87,7 +87,14 @@ export const FooterLink = styled.div`
 export const FooterIconWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 2rem;
+  @media (max-width: 768px) {
+    gap: 1rem;
+    backdrop-filter: blur(10px);
+    border-radius: 22px;
+    padding: 0.5rem 0;
+  }
 `;
 export const FooterIcon = styled.div`
   cursor: pointer;

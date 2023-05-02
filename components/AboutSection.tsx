@@ -34,7 +34,7 @@ export default function AboutSection() {
   return (
     <AboutWrapper>
       <AboutContainer>
-        <AboutTitle>Welcome to BOB PEPE AI</AboutTitle>
+        <AboutTitle>WELCOME TO BOB PEPE AI</AboutTitle>
         <AboutHeader>This is the about section</AboutHeader>
         <AboutBody>
           {aboutData.map((data) => (

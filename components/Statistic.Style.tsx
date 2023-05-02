@@ -27,17 +27,15 @@ export const StaticHeader = styled.div`
   font-size: 1rem;
 `;
 export const StaticBody = styled.div`
-  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2rem;
   @media (max-width: 768px) {
-    padding: 0px;
+    padding: 10px;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
   }
 `;
 export const StaticTitle = styled.div`

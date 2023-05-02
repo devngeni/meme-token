@@ -39,7 +39,7 @@ export const NavbarMenu = styled.div`
   flex-direction: row;
   gap: 2rem;
   align-items: center;
-  width: 30%;
+  width: 50%;
   @media (max-width: 768px) {
     display: none;
   }

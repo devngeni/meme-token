@@ -9,11 +9,12 @@ import {
   AboutTitle,
   AboutWrapper,
   EconomicsContainer,
+  EconomicsWrapper,
 } from "./About.styles";
 
 export default function EconomicsSection() {
   return (
-    <AboutWrapper>
+    <EconomicsWrapper>
       <EconomicsContainer>
         <AboutTitle>BOBtonomics</AboutTitle>
         <AboutGrid>
@@ -30,6 +31,6 @@ export default function EconomicsSection() {
           </AboutRightItem>
         </AboutGrid>
       </EconomicsContainer>
-    </AboutWrapper>
+    </EconomicsWrapper>
   );
 }

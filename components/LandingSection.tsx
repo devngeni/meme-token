@@ -13,6 +13,11 @@ import {
   TextWrapper,
 } from "./Landing.Style";
 import { toast } from "react-hot-toast";
+import { FooterIcon, FooterIconWrapper } from "./Footer.Styles";
+import Twitter from "@/public/Twitter";
+import LinkedIn from "@/public/LinkedIn";
+import Youtube from "@/public/Youtube";
+import Discord from "@/public/Discord";
 export default function LandingSection() {
   const connectToWallet = () => {
     toast.success("Coming soon...");
@@ -33,9 +38,20 @@ export default function LandingSection() {
             <TextCard>🔥31 days will be burned🔥</TextCard>
             <ButtonWrapper>
               <Button onClick={() => connectToWallet()}>Claim Airdrop</Button>
-              <LandingButton onClick={() => connectToWallet()}>
-                Invite
-              </LandingButton>
+              <FooterIconWrapper>
+                <FooterIcon>
+                  <Twitter />
+                </FooterIcon>
+                <FooterIcon>
+                  <LinkedIn />
+                </FooterIcon>
+                <FooterIcon>
+                  <Youtube />
+                </FooterIcon>
+                <FooterIcon>
+                  <Discord />
+                </FooterIcon>
+              </FooterIconWrapper>
             </ButtonWrapper>
           </BodyImage>
           <TextBody>

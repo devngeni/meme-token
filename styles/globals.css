@@ -14,6 +14,10 @@ body {
 
 :root {
   --gap: 1rem;
+  --color-grey-gradient-start: #272a2a;
+  --color-grey-gradient-end: #141414;
+  --color-grey-24: #3b4040;
+  --border-radius-44: 44px;
 }
 @keyframes scroll {
   from {
