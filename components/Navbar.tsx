@@ -37,17 +37,15 @@ export default function Navbar() {
             NFT
           </NavbarMenuItemLink>
         </NavbarMenu>
-        {isMobile ? (
-          <NavbarMenuItem>
-            <Web3Button icon="show" label="Connect Wallet" balance="show" />
-          </NavbarMenuItem>
-        ) : (
-          <NavbarMenuItem>
-            <Web3Button icon="show" label="Connect Wallet" balance="show" />
-            <br />
-            <Web3NetworkSwitch />
-          </NavbarMenuItem>
-        )}
+        <NavbarMenuItem>
+          <Web3Button icon="show" label="Connect Wallet" balance="show" />
+          {!isMobile && (
+            <>
+              <br />
+              <Web3NetworkSwitch />
+            </>
+          )}
+        </NavbarMenuItem>
       </NavbarContainer>
     </NavbarWrapper>
   );

@@ -28,7 +28,7 @@ export default function LandingSection() {
         <Headers>Proudly Launched On Arbitram</Headers>
         <TextWrapper>
           <BodyImage>
-            <LandingTitle>You Can Claim Bob Pepe AI Now!</LandingTitle>
+            <LandingTitle>You can claim Bob Pepe AI now!</LandingTitle>
             <LandingText>
               BOB PEPE AI is excited to announce that a whopping 210 quadrillion
               BOB tokens are up for grabs for those who participated in the ARB

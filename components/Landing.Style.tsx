@@ -76,7 +76,6 @@ export const TextBody = styled.div`
   }
 `;
 export const BodyImage = styled.div`
-  max-width: 600px;
   position: relative;
   opacity: 1;
   display: flex;
@@ -86,15 +85,14 @@ export const BodyImage = styled.div`
   gap: 2rem;
   padding: 0.5rem;
   z-index: 1;
+  max-width: 100%;
+  width: clamp(300px, 100%, 600px);
   &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/Hands.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
+    background: url("/Hands.png") no-repeat bottom / contain;
     background-blend-mode: lighten, normal;
     box-shadow: 2px 4px 41px -7px rgba(0, 129, 199, 0.2);
     backdrop-filter: blur(50px);
@@ -102,12 +100,8 @@ export const BodyImage = styled.div`
     opacity: 0.5;
     z-index: -1;
   }
-  @media (max-width: 1200px) {
-    max-width: 500px;
-    gap: 1rem;
-  }
+
   @media (max-width: 768px) {
-    gap: 1rem;
     padding: 0;
     &::before {
       opacity: 1;
@@ -136,14 +130,11 @@ export const LandingButton = styled.button`
   }
 `;
 export const LandingTitle = styled(Title)`
-  font-size: calc(1.5rem + ((0.8vw - 0.2rem) * 1));
-  line-height: 3rem;
+  font-size: clamp(1rem, 1.5rem + 0.8vw, 2.5rem);
+  line-height: clamp(1.5rem, 3rem, 4rem);
   width: 100%;
   text-align: center;
   margin: 0;
-  @media (max-width: 768px) {
-    line-height: 1.5rem;
-  }
 `;
 export const LandingText = styled(Text)`
   text-align: center;
