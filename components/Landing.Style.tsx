@@ -76,14 +76,16 @@ export const TextBody = styled.div`
   }
 `;
 export const BodyImage = styled.div`
-  width: 30%;
-  height: 60vh;
+  max-width: 600px;
+  max-height: 70vh;
   position: relative;
   opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  gap: 2rem;
+  padding: 0.5rem;
   z-index: 1;
   &::before {
     content: "";
@@ -101,9 +103,14 @@ export const BodyImage = styled.div`
     opacity: 0.5;
     z-index: -1;
   }
-  @media (max-width: 768px) {
-    width: 100%;
+  @media (max-width: 1200px) {
+    max-width: 500px;
+    max-height: 80vh;
     gap: 1rem;
+  }
+  @media (max-width: 768px) {
+    gap: 1rem;
+    height: 40vh;
     &::before {
       opacity: 1;
     }
@@ -131,23 +138,20 @@ export const LandingButton = styled.button`
   }
 `;
 export const LandingTitle = styled(Title)`
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: calc(1.5rem + ((0.8vw - 0.2rem) * 1));
+  line-height: 3rem;
   width: 100%;
   text-align: center;
+  margin: 0;
   @media (max-width: 768px) {
-    font-size: 1.5rem;
     line-height: 1.5rem;
   }
 `;
 export const LandingText = styled(Text)`
-  width: 100%;
   text-align: center;
   background-blend-mode: lighten, normal;
-  font-size: 1.5rem;
-  @media (max-width: 768px) {
-    font-size: 0.8rem;
-  }
+  font-size: calc(1rem + ((0.8vw - 0.2rem) * 0.6));
+  padding: 0 10px;
 `;
 export const ButtonWrapper = styled.div`
   display: flex;
@@ -172,12 +176,12 @@ export const TextCard = styled.div`
   box-shadow: 2px 4px 41px -7px rgba(0, 129, 199, 0.2);
   backdrop-filter: blur(50px);
   border-radius: 20px;
-  width: 50%;
-  height: 54px;
+  max-width: 70%;
+  max-height: 54px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: calc(0.6rem + ((0.5vw - 0.2rem) * 1));
   border: 1px solid #ec9f05;
   background: linear-gradient(
     87.65deg,

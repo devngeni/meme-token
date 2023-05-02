@@ -30,7 +30,7 @@ export default function StatisticSection() {
           <StaticText>
             <StaticHeader>Destroyed Address</StaticHeader>
             <StaticAdress>
-              0x000000000000000000000000000000000000dEaD ↗
+              0x000000****0dEaD ↗
             </StaticAdress>
           </StaticText>
         </StaticBody>

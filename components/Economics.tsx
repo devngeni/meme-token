@@ -1,7 +1,9 @@
 import Technomics from "@/public/Technomics";
+import { useContext } from "react";
 import {
   AboutContainer,
   AboutGrid,
+  AboutImage,
   AboutLeftItem,
   AboutList,
   AboutListWrapper,
@@ -11,12 +13,14 @@ import {
   EconomicsContainer,
   EconomicsWrapper,
 } from "./About.styles";
+import GlobalContext from "@/context/GlobalContext";
 
 export default function EconomicsSection() {
+  const { isMobile } = useContext(GlobalContext);
   return (
     <EconomicsWrapper>
       <EconomicsContainer>
-        <AboutTitle>BOBtonomics</AboutTitle>
+        <AboutTitle>BOBtonomics Distribution</AboutTitle>
         <AboutGrid>
           <AboutLeftItem>
             <AboutListWrapper>
@@ -27,7 +31,7 @@ export default function EconomicsSection() {
             </AboutListWrapper>
           </AboutLeftItem>
           <AboutRightItem>
-            <Technomics />
+            <AboutImage />
           </AboutRightItem>
         </AboutGrid>
       </EconomicsContainer>

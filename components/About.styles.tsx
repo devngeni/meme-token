@@ -35,6 +35,20 @@ export const AboutWrapper = styled.div`
     }
   }
 `;
+export const AboutImage = styled.div`
+  width: 355px;
+  height: 40vh;
+  background: url("/Stats.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @media (min-width: 768px) {
+    width: 100%;
+    svg {
+      width: 600px;
+    }
+  }
+`;
 export const EconomicsWrapper = styled(AboutWrapper)`
   @media (max-width: 768px) {
     &::before {
@@ -56,6 +70,7 @@ export const AboutContainer = styled.div`
 export const AboutTitle = styled(Title)`
   text-align: left;
   text-decoration: underline;
+  font-size: calc(0.6rem + ((1vw - 0.2rem) * 3));
   @media (max-width: 768px) {
     text-align: center;
     font-size: 2rem;
@@ -69,6 +84,7 @@ export const AboutHeader = styled(Headers)`
   background-position: left;
   background-size: contain;
   width: 100%;
+  font-size: calc(0.6rem + ((1vw - 0.2rem) * 2));
   @media (max-width: 768px) {
     font-size: 1.5rem;
     line-height: 1.5;
@@ -87,6 +103,9 @@ export const AboutContent = styled.div`
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  @media (max-width: 1200px) {
+    gap: 1rem;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
@@ -97,22 +116,29 @@ export const AboutCard = styled.div`
   background: #404430;
   backdrop-filter: blur(17px);
   border-radius: 22px;
-  width: 400px;
+  max-width: 400px;
   height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  @media (max-width: 1200px) {
+    max-width: 600px;
+    height: 50vh;
+  }
   @media (max-width: 768px) {
     width: 80%;
+    height: 30vh;
   }
 `;
 export const AboutText = styled.div`
   color: #fff;
   line-height: 1.5;
-
   span {
     color: #41bfb3;
+  }
+  @media (max-width: 1200px) {
+    font-size: 1rem;
   }
 `;
 export const LineWrapper = styled.div`
@@ -132,15 +158,8 @@ export const AboutGrid = styled.div`
 `;
 export const AboutLeftItem = styled.div``;
 export const AboutRightItem = styled.div`
-  width: 90%;
+  width: 100%;
   height: 100%;
-  @media (max-width: 768px) {
-    width: 100%;
-    svg {
-      width: 100%;
-      height: 100%;
-    }
-  }
 `;
 export const EconomicsContainer = styled(AboutContainer)`
   width: 80%;
@@ -161,4 +180,5 @@ export const AboutListWrapper = styled.ul`
 `;
 export const AboutList = styled.li`
   color: #fff;
+  font-size: calc(1rem + ((1vw - 0.2rem) * 1));
 `;

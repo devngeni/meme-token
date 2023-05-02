@@ -12,10 +12,14 @@ export const StaticContainer = styled.div`
   position: relative;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgb(30, 39, 64);
-  width: 70%;
+  width: 60%;
   height: 40vh;
   display: flex;
   flex-direction: row;
+  @media (max-width: 1200px) {
+    width: 80%;
+    height: 60vh;
+  }
   @media (max-width: 768px) {
     width: 100%;
     flex-direction: column;
@@ -32,6 +36,9 @@ export const StaticBody = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2rem;
+  @media (max-width: 1200px) {
+    padding: 1rem;
+  }
   @media (max-width: 768px) {
     padding: 10px;
     flex-direction: column;
@@ -66,9 +73,9 @@ export const StaticText = styled.div`
 `;
 export const StaticAdress = styled.div`
   color: rgb(23, 243, 221);
-  font-size: 1.5rem;
+  font-size: calc(0.6rem + ((1vw - 0.2rem) * 1));
+  flex-wrap: nowrap;
   @media (max-width: 768px) {
-    font-size: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

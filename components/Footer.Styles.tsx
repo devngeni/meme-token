@@ -14,6 +14,10 @@ export const FooterContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 3rem;
+  @media (max-width: 1200px) {
+    width: 96%;
+    gap: 1rem;
+  }
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -36,14 +40,23 @@ export const FooterTile = styled(Title)`
   text-align: left;
   justify-content: left;
   width: 100%;
+  @media (max-width: 1200px) {
+    font-size: 1.2rem;
+  }
 `;
 export const FooterText = styled.p`
   width: 100%;
   color: #fff;
+  @media (max-width: 1200px) {
+    font-size: 0.8rem;
+  }
 `;
 export const FooterHeader = styled.div`
   color: #fff;
   font-size: 1.5rem;
+  @media (max-width: 1200px) {
+    font-size: 1.2rem;
+  }
 `;
 export const FooterContent = styled.div`
   display: flex;
@@ -82,6 +95,9 @@ export const FooterLink = styled.div`
       transform-origin: bottom left;
     }
   }
+  @media (max-width: 1200px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const FooterIconWrapper = styled.div`
@@ -89,6 +105,9 @@ export const FooterIconWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
+  @media (max-width: 1200px) {
+    gap: 1rem;
+  }
   @media (max-width: 768px) {
     gap: 1rem;
     backdrop-filter: blur(10px);

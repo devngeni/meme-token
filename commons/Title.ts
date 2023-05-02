@@ -24,7 +24,7 @@ export const Title = styled.h1`
 export const Headers = styled.h1`
   color: #fff;
   font-weight: 700;
-  font-size: 49px;
+  font-size: calc(0.6rem + ((1vw - 0.2rem) * 3));
   background: url("/Line.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -40,7 +40,7 @@ export const Headers = styled.h1`
 export const Text = styled.p`
   color: #fff;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: calc(0.6rem + ((1vw - 0.2rem) * 1));
   @media (max-width: 768px) {
     font-size: 1rem;
   }

@@ -17,6 +17,9 @@ export const NavbarContainer = styled.div`
   height: 100%;
   justify-content: space-evenly;
   display: inline-flex;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
   @media (max-width: 768px) {
     width: 100%;
     justify-content: space-between;
@@ -28,9 +31,15 @@ export const NavbarTitle = styled(Title)`
   font-size: 1.5rem;
   text-align: left;
   width: 20%;
+  margin: 0;
   @media (max-width: 768px) {
     width: 50%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    height: 100%;
   }
 `;
 export const NavbarMenu = styled.div`
@@ -40,6 +49,9 @@ export const NavbarMenu = styled.div`
   gap: 2rem;
   align-items: center;
   width: 50%;
+  @media (max-width: 1200px) {
+    width: 40%;
+  }
   @media (max-width: 768px) {
     display: none;
   }
