@@ -108,6 +108,7 @@ export const BodyImage = styled.div`
   }
   @media (max-width: 768px) {
     gap: 1rem;
+    padding: 0;
     &::before {
       opacity: 1;
     }
