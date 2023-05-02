@@ -77,7 +77,6 @@ export const TextBody = styled.div`
 `;
 export const BodyImage = styled.div`
   max-width: 600px;
-  max-height: 70vh;
   position: relative;
   opacity: 1;
   display: flex;
@@ -105,12 +104,10 @@ export const BodyImage = styled.div`
   }
   @media (max-width: 1200px) {
     max-width: 500px;
-    max-height: 80vh;
     gap: 1rem;
   }
   @media (max-width: 768px) {
     gap: 1rem;
-    height: 40vh;
     &::before {
       opacity: 1;
     }
