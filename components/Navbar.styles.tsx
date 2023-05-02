@@ -15,14 +15,16 @@ export const NavbarWrapper = styled.div`
 export const NavbarContainer = styled.div`
   width: 80%;
   height: 100%;
-  justify-content: space-evenly;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-content: center;
+  flex-wrap: wrap;
   @media (max-width: 1200px) {
     width: 100%;
+    padding: 0 10px;
   }
   @media (max-width: 768px) {
-    width: 100%;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
   }
 `;
 export const NavbarContent = styled.div``;
@@ -30,10 +32,8 @@ export const NavbarLogo = styled.div``;
 export const NavbarTitle = styled(Title)`
   font-size: 1.5rem;
   text-align: left;
-  width: 20%;
   margin: 0;
   @media (max-width: 768px) {
-    width: 50%;
     font-size: 1.2rem;
     justify-content: center;
     align-content: center;
@@ -48,9 +48,8 @@ export const NavbarMenu = styled.div`
   flex-direction: row;
   gap: 2rem;
   align-items: center;
-  width: 50%;
   @media (max-width: 1200px) {
-    width: 40%;
+    gap: 0rem;
   }
   @media (max-width: 768px) {
     display: none;
@@ -96,14 +95,10 @@ export const NavbarMenuItemLink = styled.div`
 `;
 
 export const NavbarMenuItem = styled.div`
-  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  @media (max-width: 768px) {
-    width: 50%;
-  }
 `;
 export const NavbarButton = styled.button`
   width: 120px;
