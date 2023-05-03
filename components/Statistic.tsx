@@ -29,12 +29,10 @@ export default function StatisticSection() {
           </TextWrapper>
           <StaticText>
             <StaticHeader>Destroyed Address</StaticHeader>
-            <StaticAdress>
-              0x000000****0dEaD ↗
-            </StaticAdress>
+            <StaticAdress>0x000000****0dEaD ↗</StaticAdress>
           </StaticText>
         </StaticBody>
-        <StaticImage></StaticImage>
+        <StaticImage />
       </StaticContainer>
     </StaticWrapper>
   );

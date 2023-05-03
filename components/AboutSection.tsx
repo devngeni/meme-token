@@ -1,13 +1,8 @@
-import { Headers, Title } from "@/commons";
 import {
-  AboutBody,
   AboutCard,
-  AboutContainer,
   AboutContent,
   AboutGrid,
   AboutHeader,
-  AboutLeftItem,
-  AboutRightItem,
   AboutText,
   AboutTitle,
   AboutWrapper,
@@ -33,22 +28,20 @@ export default function AboutSection() {
   ];
   return (
     <AboutWrapper>
-      <AboutContainer>
-        <AboutTitle>WELCOME TO BOB PEPE AI</AboutTitle>
-        <AboutHeader>This is the about section</AboutHeader>
-        <AboutBody>
-          {aboutData.map((data) => (
-            <AboutContent key={data.title}>
-              <AboutCard>
-                <AboutText dangerouslySetInnerHTML={{ __html: data.title }} />
-              </AboutCard>
-              <LineWrapper>
-                <Line />
-              </LineWrapper>
-            </AboutContent>
-          ))}
-        </AboutBody>
-      </AboutContainer>
+      <AboutTitle>WELCOME TO BOB PEPE AI</AboutTitle>
+      <AboutHeader>This is the about section</AboutHeader>
+      <AboutGrid>
+        {aboutData.map((data) => (
+          <AboutContent>
+            <AboutCard key={data.title}>
+              <AboutText dangerouslySetInnerHTML={{ __html: data.title }} />
+            </AboutCard>
+            <LineWrapper>
+              <Line />
+            </LineWrapper>
+          </AboutContent>
+        ))}
+      </AboutGrid>
     </AboutWrapper>
   );
 }

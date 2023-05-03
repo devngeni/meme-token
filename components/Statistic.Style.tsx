@@ -6,6 +6,7 @@ export const StaticWrapper = styled.div`
   height: 100%;
   justify-content: center;
   align-content: center;
+  margin: 20px 0;
 `;
 export const StaticContainer = styled.div`
   border-radius: 16px;
