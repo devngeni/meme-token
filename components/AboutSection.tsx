@@ -32,8 +32,8 @@ export default function AboutSection() {
       <AboutHeader>This is the about section</AboutHeader>
       <AboutGrid>
         {aboutData.map((data) => (
-          <AboutContent>
-            <AboutCard key={data.title}>
+          <AboutContent key={data.title}>
+            <AboutCard>
               <AboutText dangerouslySetInnerHTML={{ __html: data.title }} />
             </AboutCard>
             <LineWrapper>
