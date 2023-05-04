@@ -1,5 +1,5 @@
 # MEME TOKEN
-- This is a project that unables creation of meme tokens and NFTS based on trendy memes
+- This is a project that unables creation of meme tokens on Arbitrum and NFTS based on trendy memes
 
 ## Getting Started
 
