@@ -14,6 +14,7 @@ import {
 import Twitter from "@/public/Twitter";
 import Youtube from "@/public/Youtube";
 import Discord from "@/public/Discord";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -28,23 +29,41 @@ export default function Footer() {
         <FooterContent>
           <FooterBody>
             <FooterHeader>QuickLinks</FooterHeader>
-            <FooterLink>About us</FooterLink>
-            <FooterLink>White Paper</FooterLink>
-            <FooterLink>FAQs</FooterLink>
+            <FooterLink>
+              <Link href="">About us</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link href="">White Paper</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link href="">FAQs</Link>
+            </FooterLink>
           </FooterBody>
 
           <FooterBody>
             <FooterHeader>Products</FooterHeader>
-            <FooterLink>Airdrop</FooterLink>
-            <FooterLink>Lucky Drop</FooterLink>
-            <FooterLink>Earn</FooterLink>
+            <FooterLink>
+              <Link href="">Airdrop</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link href="">Lucky Drop</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link href="">Earn</Link>
+            </FooterLink>
           </FooterBody>
 
           <FooterBody>
             <FooterHeader>Press</FooterHeader>
-            <FooterLink>Terms of Use</FooterLink>
-            <FooterLink>Privacy Policy</FooterLink>
-            <FooterLink>Brand</FooterLink>
+            <FooterLink>
+              <Link href="">Terms of Use</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link href="">Privacy Policy</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link href="">Brand</Link>
+            </FooterLink>
           </FooterBody>
         </FooterContent>
         <FooterBody>

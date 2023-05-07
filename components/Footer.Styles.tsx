@@ -76,31 +76,50 @@ export const FooterContent = styled.div`
 `;
 export const FooterLink = styled.div`
   cursor: pointer;
-  width: 100%;
-  line-height: 2rem;
-  color: #9e9e9e;
-  &:hover {
-    color: #88d7cf;
-    cursor: pointer;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+
+  a {
+    position: relative;
+    display: flex;
+    align-items: center;
     transition: 0.2s ease-in-out;
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      right: 10%;
-      background-color: #88d7cf;
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-    }
-    &:hover:after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
+    text-decoration: none;
+    color: rgb(161, 161, 161);
   }
+
+  a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #88d7cf;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  a:hover {
+    color: #88d7cf;
+  }
+
+  a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  @media (max-width: 769px) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
   @media (max-width: 1200px) {
     font-size: 0.8rem;
   }
