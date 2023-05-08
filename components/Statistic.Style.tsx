@@ -85,9 +85,9 @@ export const StaticAdress = styled.div`
 export const StaticImage = styled.div`
   width: 50%;
   height: 100%;
-  background: url("/Astronat.jpg") #000;
-  background-size: cover;
-  background-position: center;
+  background: url("/Frog.png");
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
   border-radius: 16px;
   @media (max-width: 768px) {
