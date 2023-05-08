@@ -74,7 +74,7 @@ export const StaticText = styled.div`
 `;
 export const StaticAdress = styled.div`
   color: rgb(23, 243, 221);
-  font-size: calc(0.6rem + ((1vw - 0.2rem) * 1));
+  font-size: calc(1rem + ((1vw - 0.2rem) * 1));
   flex-wrap: nowrap;
   @media (max-width: 768px) {
     display: flex;
@@ -92,5 +92,7 @@ export const StaticImage = styled.div`
   border-radius: 16px;
   @media (max-width: 768px) {
     width: 100%;
+    background-position: center;
+    background-size: cover;
   }
 `;
