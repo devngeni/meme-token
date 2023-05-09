@@ -76,7 +76,7 @@ export default function AboutSection() {
 
             <WhatHeader>
               Say goodbye to mundane investments and hello to the excitement of
-              BOB PEPE AI. We're here to make investing an adrenaline-fueled
+              BOB PEPE AI. We&apos;re here to make investing an adrenaline-fueled
               ride, Investing should be thrilling, not boring.
             </WhatHeader>
           </AboutLeftItem>
