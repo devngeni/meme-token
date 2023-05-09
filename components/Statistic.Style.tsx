@@ -85,7 +85,7 @@ export const StaticAdress = styled.div`
 export const StaticImage = styled.div`
   width: 50%;
   height: 100%;
-  background: url("/Frog.png");
+  background: url("/frogpepe.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;

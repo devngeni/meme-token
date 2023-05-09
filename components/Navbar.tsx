@@ -10,7 +10,7 @@ import {
 import { toast } from "react-hot-toast";
 import { Web3Button, Web3NetworkSwitch } from "@web3modal/react";
 import GlobalContext from "@/context/GlobalContext";
-import { TextBreak } from "@/commons";
+
 export default function Navbar() {
   const { isMobile } = useContext(GlobalContext);
   const connectToWallet = () => {

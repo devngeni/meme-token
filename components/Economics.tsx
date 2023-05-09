@@ -23,14 +23,19 @@ export default function EconomicsSection() {
       <EconomicsContainer>
         <AboutTitle>BOBtonomics Distribution</AboutTitle>
         <WhatContent>
-          <AboutLeftItem>
-            <AboutListWrapper>
-              <AboutList>10% Team (Lock for 6Months)</AboutList>
-              <AboutList>15% Marketing</AboutList>
-              <AboutList>55% LP + Staking Rewards</AboutList>
-              <AboutList>20% Airdrop</AboutList>
-            </AboutListWrapper>
-          </AboutLeftItem>
+          <AboutListWrapper>
+            <AboutList>
+              25% airdrop tokens distributed to eligible wallets which have
+              minted NFTs. Remaining tokens will be burned.
+            </AboutList>
+            <AboutList>
+              Liquidity - 50% goes for growing the community
+            </AboutList>
+            <AboutList>10% will be distributed to team management</AboutList>
+            <AboutList>
+              15% will be distributed to the marketing team.
+            </AboutList>
+          </AboutListWrapper>
           <AboutRightItem>
             <AboutImage />
           </AboutRightItem>

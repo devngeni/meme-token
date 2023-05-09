@@ -33,7 +33,7 @@ export const AboutWrapper = styled.section`
   }
 `;
 export const AboutContainer = styled.div`
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,9 @@ export const AboutTitle = styled(Title)`
   line-height: 44px;
   text-align: center;
   color: #ffffff;
-  width: 30%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const AboutHeader = styled(Headers)`
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -66,8 +68,10 @@ export const AboutHeader = styled(Headers)`
   }
 `;
 export const AboutParagraph = styled(LandingText)`
-  width: 40%;
   text-align: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const AboutGrid = styled.div`
   display: grid;
@@ -75,6 +79,10 @@ export const AboutGrid = styled.div`
   gap: 2rem;
   width: 60%;
   padding: 3rem 0;
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 1rem 0;
+  }
 `;
 export const AboutCardTitle = styled.div`
   font-family: "Kanit";
@@ -120,6 +128,9 @@ export const AboutImage = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  @media (max-width: 768px) {
+    height: 50vh;
+  }
 `;
 export const LineWrapper = styled.div`
   @media (max-width: 768px) {
@@ -153,36 +164,54 @@ export const AboutContent = styled.div`
     align-items: center;
   }
 `;
+export const AboutLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+`;
 
 export const AboutLeftItem = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
   width: 100%;
 `;
 export const AboutRightItem = styled.div``;
 export const EconomicsContainer = styled(AboutContainer)`
-  width: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-content: center;
+  flex-wrap: wrap;
 `;
 export const AboutListWrapper = styled.ul`
   display: flex;
   flex-direction: column;
   justify-self: center;
   align-content: center;
-  width: 100%;
   flex-wrap: wrap;
   font-size: 2rem;
   margin: 0;
   padding: 2rem 0;
   @media (max-width: 768px) {
-    font-size: 1rem;
-    width: 90%;
+    font-size: 2rem;
+    gap: 1rem;
   }
 `;
-export const AboutList = styled.li`
+export const AboutList = styled.div`
   color: #fff;
-  font-size: calc(1rem + ((1vw - 0.2rem) * 1));
+  font-size: clamp(16px, calc(1rem + ((1vw - 7.68px) * 0.1736)), 18px);
+  text-align: center;
 `;
 
 export const WhatTitle = styled(Title)`
@@ -210,5 +239,5 @@ export const WhatImage = styled.div`
 `;
 
 export const WhatContent = styled.div`
-  justify-content: center;
+  width: 100%;
 `;

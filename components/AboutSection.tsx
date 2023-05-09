@@ -1,9 +1,11 @@
 import {
   AboutCard,
   AboutCardTitle,
+  AboutContainer,
   AboutContent,
   AboutGrid,
   AboutHeader,
+  AboutLeft,
   AboutLeftItem,
   AboutParagraph,
   AboutRightItem,
@@ -20,6 +22,7 @@ import Angel from "@/public/Angel.svg";
 import Bug from "@/public/Bug.svg";
 import Dat from "@/public/Dat.svg";
 import Image from "next/image";
+import { LandingContent } from "./Landing.Style";
 
 export default function AboutSection() {
   const aboutData = [
@@ -41,43 +44,47 @@ export default function AboutSection() {
   ];
   return (
     <AboutWrapper>
-      <AboutTitle>Experience the power of BOB PEPE AI</AboutTitle>
-      <AboutParagraph>
-        Join us today to experience the power of BOB PEPE AI and revolutionize
-        your trading experience.
-      </AboutParagraph>
-      <AboutHeader>How to Participate</AboutHeader>
-      <AboutGrid>
-        {aboutData.map((data, index) => (
-          <AboutContent key={index}>
-            <AboutCard>
-              <Image src={data.image} alt={data.image} />
-              <AboutCardTitle>{data.title}</AboutCardTitle>
-              <AboutText dangerouslySetInnerHTML={{ __html: data.text }} />
-            </AboutCard>
-          </AboutContent>
-        ))}
-      </AboutGrid>
-      <AboutGrid>
-        <AboutLeftItem>
-          <AboutTitle style={{ textAlign: "start" }}>What is</AboutTitle>
-          <WhatTitle>BOB PEPE AI?</WhatTitle>
-          <WhatHeader>
-            Bob Pepe AI is a community driven, fair launched DeFi Token. Three
-            simple functions occur during each trade: NFT minting, Airdrop, Buy
-            tokens
-          </WhatHeader>
+      <AboutContainer>
+        <AboutLeft>
+          <AboutTitle>Experience the power of BOB PEPE AI</AboutTitle>
+          <AboutParagraph>
+            Join us today to experience the power of BOB PEPE AI and
+            revolutionize your trading experience.
+          </AboutParagraph>
+          <AboutHeader>How to Participate</AboutHeader>
+        </AboutLeft>
+        <AboutGrid>
+          {aboutData.map((data, index) => (
+            <AboutContent key={index}>
+              <AboutCard>
+                <Image src={data.image} alt={data.image} />
+                <AboutCardTitle>{data.title}</AboutCardTitle>
+                <AboutText dangerouslySetInnerHTML={{ __html: data.text }} />
+              </AboutCard>
+            </AboutContent>
+          ))}
+        </AboutGrid>
+        <AboutGrid>
+          <AboutLeftItem>
+            <AboutTitle style={{ textAlign: "start" }}>What is</AboutTitle>
+            <WhatTitle>BOB PEPE AI?</WhatTitle>
+            <WhatHeader>
+              Bob Pepe AI is a community driven, fair launched DeFi Token. Three
+              simple functions occur during each trade: NFT minting, Airdrop,
+              Buy tokens
+            </WhatHeader>
 
-          <WhatHeader>
-            Say goodbye to mundane investments and hello to the excitement of
-            BOB PEPE AI. We're here to make investing an adrenaline-fueled ride,
-            Investing should be thrilling, not boring.
-          </WhatHeader>
-        </AboutLeftItem>
-        <AboutRightItem>
-          <WhatImage />
-        </AboutRightItem>
-      </AboutGrid>
+            <WhatHeader>
+              Say goodbye to mundane investments and hello to the excitement of
+              BOB PEPE AI. We're here to make investing an adrenaline-fueled
+              ride, Investing should be thrilling, not boring.
+            </WhatHeader>
+          </AboutLeftItem>
+          <AboutRightItem>
+            <WhatImage />
+          </AboutRightItem>
+        </AboutGrid>
+      </AboutContainer>
     </AboutWrapper>
   );
 }

@@ -40,6 +40,9 @@ export const LandingContainer = styled.div`
     z-index: -1;
     opacity: 1;
   }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const LandingContent = styled.div`
@@ -51,6 +54,9 @@ export const LandingContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const LandingGrid = styled.div`

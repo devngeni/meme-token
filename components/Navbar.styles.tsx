@@ -30,6 +30,7 @@ export const NavbarContainer = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
+    width: 100%;
   }
 `;
 
