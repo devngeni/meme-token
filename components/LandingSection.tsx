@@ -16,7 +16,7 @@ export default function LandingSection() {
           <Title>Proudly Launched on Arbitrum</Title>
           <LandingHeader>$BBPP airdrop is coming soon!</LandingHeader>
           <LandingText>
-            A total of 1,000,000,000  with o%tax BBPP tokens will be
+            A total of 1,000,000,000 with o%tax BBPP tokens will be
             airdroppedAll users must register the form to participate in the
             Airdrop.
           </LandingText>
