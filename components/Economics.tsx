@@ -12,6 +12,7 @@ import {
   AboutWrapper,
   EconomicsContainer,
   EconomicsWrapper,
+  WhatContent,
 } from "./About.styles";
 import GlobalContext from "@/context/GlobalContext";
 
@@ -21,7 +22,7 @@ export default function EconomicsSection() {
     <EconomicsWrapper>
       <EconomicsContainer>
         <AboutTitle>BOBtonomics Distribution</AboutTitle>
-        <AboutGrid>
+        <WhatContent>
           <AboutLeftItem>
             <AboutListWrapper>
               <AboutList>10% Team (Lock for 6Months)</AboutList>
@@ -33,7 +34,7 @@ export default function EconomicsSection() {
           <AboutRightItem>
             <AboutImage />
           </AboutRightItem>
-        </AboutGrid>
+        </WhatContent>
       </EconomicsContainer>
     </EconomicsWrapper>
   );

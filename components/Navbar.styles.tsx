@@ -13,13 +13,13 @@ export const NavbarWrapper = styled.div`
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(15px);
-  background: transparent;
+  background: #201124;
   position: fixed;
   z-index: 10;
 `;
 
 export const NavbarContainer = styled.div`
-  width: 90%;
+  width: 80%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -34,6 +34,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavbarTitle = styled(Title)`
+  font-family: "Kanit";
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   text-align: left;
   margin: 0;
@@ -52,13 +53,13 @@ export const NavbarMenu = styled.div`
 `;
 
 export const NavbarMenuItemLink = styled.div`
-  background: linear-gradient(270deg, rgb(156, 81, 255) 0%, rgb(85, 161, 255) 50%, rgb(156, 81, 255) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: "Kanit";
+  font-weight: 400;
+  line-height: 27px;
+  color: #75d88a;
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   cursor: pointer;
   position: relative;
-
   &:hover {
     color: #9e9e9e;
     transition: all 0.5s ease-in-out;
@@ -93,7 +94,6 @@ export const NavbarMenuItem = styled.div`
   align-items: center;
   gap: 1rem;
   grid-column: 3;
-
   @media (max-width: 768px) {
     grid-column: 2;
   }
@@ -109,10 +109,8 @@ export const NavbarButton = styled.button`
   font-weight: 500;
   font-size: clamp(1rem, 2vw, 1.2rem);
   cursor: pointer;
-
   &:hover {
     border: 1px solid #ffd2ed;
     transition: all 0.5s ease-in-out;
   }
 `;
-

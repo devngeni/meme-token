@@ -1,30 +1,19 @@
 import styled from "styled-components";
 
 export const Title = styled.h1`
-  width: 100%;
+  font-family: "Kanit", sans-serif;
   font-weight: 700;
-  font-size: 49px;
-  line-height: 63px;
-  letter-spacing: 0.01em;
-  background: linear-gradient(64.87deg, #ffd2ed -0.1%, #01baef 91.22%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-align: center;
-  text-fill-color: transparent;
-  font-variation-settings: "slnt" 0;
-  @media (max-width: 768px) {
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    margin-bottom: 2px;
-  }
+  font-size: 64px;
+  line-height: 70px;
+  color: #83f7a3;
+  margin: 0;
 `;
 
 export const Headers = styled.h1`
-  color: #fff;
   font-weight: 700;
-  font-size: calc(0.6rem + ((1vw - 0.2rem) * 3));
+  font-size: 64px;
+  line-height: 70px;
+  color: #83f7a3;
   background: url("/Line.svg");
   background-repeat: no-repeat;
   background-position: center;

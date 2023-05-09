@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
 html,
 body {
   font-family: "Space Mono", monospace;
   font-style: normal;
-  background: linear-gradient(
-    105.05deg,
-    #010c10 10.85%,
-    #061d1b 67.36%,
-    #141311 128.79%
-  );
+  background: #201124;
   margin: 0;
 }
 

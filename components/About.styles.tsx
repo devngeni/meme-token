@@ -1,17 +1,33 @@
 import { Headers, Title } from "@/commons";
 import styled from "styled-components";
+import { LandingText } from "./Landing.Style";
 export const AboutWrapper = styled.section`
   width: 100%;
   padding: 4rem 0;
   position: relative;
-  background: url("/Dots.svg") #000;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  backdrop-filter: blur(15px);
+  background: url("Glowb.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  z-index: 1;
+  position: relative;
+  &::before {
+    background-image: url("/GroupLines.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+  }
   @media (max-width: 768px) {
     padding: 2rem 0;
   }
@@ -28,9 +44,13 @@ export const AboutContainer = styled.div`
   }
 `;
 export const AboutTitle = styled(Title)`
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
   text-align: center;
-  text-decoration: underline;
+  color: #ffffff;
+  width: 30%;
 `;
 export const AboutHeader = styled(Headers)`
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -45,49 +65,61 @@ export const AboutHeader = styled(Headers)`
     padding: 0;
   }
 `;
-
+export const AboutParagraph = styled(LandingText)`
+  width: 40%;
+  text-align: center;
+`;
 export const AboutGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  width: 80%;
+  width: 60%;
+  padding: 3rem 0;
 `;
-
+export const AboutCardTitle = styled.div`
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  background: linear-gradient(264.66deg, #83f7a3 19.25%, #acf780 95.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: flex;
+  text-align: left;
+  margin: 0;
+`;
 export const AboutCard = styled.div`
-  background: #404430;
+  background: #201124;
+  border-radius: 10px;
   backdrop-filter: blur(17px);
-  border-radius: 22px;
-  padding: 1rem;
+  padding: 2rem;
+  height: 317px;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   justify-content: center;
-  align-items: center;
 `;
 
 export const AboutText = styled.div`
   color: #fff;
-  font-size: clamp(0.8rem, 1.6vw, 1.2rem);
-  line-height: 1.5;
-
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e0e0e0;
   span {
-    color: #41bfb3;
+    color: #acf780;
   }
 `;
 
 export const AboutImage = styled.div`
   width: 100%;
-  height: 40vh;
-  background: url("/Stats.svg");
+  height: 80vh;
+  background: url("/Graph.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  transform: scaleX(1.1);
-  @media (min-width: 768px) {
-    width: 100%;
-    svg {
-      width: 600px;
-    }
-  }
 `;
 export const LineWrapper = styled.div`
   @media (max-width: 768px) {
@@ -95,6 +127,12 @@ export const LineWrapper = styled.div`
   }
 `;
 export const EconomicsWrapper = styled(AboutWrapper)`
+  background: url("/Glowing.svg");
+  background-repeat: no-repeat;
+  backdrop-filter: blur(15px);
+  &::before {
+    background-image: none;
+  }
   @media (max-width: 768px) {
     &::before {
       top: 0;
@@ -116,23 +154,27 @@ export const AboutContent = styled.div`
   }
 `;
 
-export const AboutLeftItem = styled.div``;
-export const AboutRightItem = styled.div`
+export const AboutLeftItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
-  height: 100%;
 `;
+export const AboutRightItem = styled.div``;
 export const EconomicsContainer = styled(AboutContainer)`
   width: 100%;
 `;
 export const AboutListWrapper = styled.ul`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
+  justify-self: center;
   align-content: center;
+  width: 100%;
   flex-wrap: wrap;
   font-size: 2rem;
+  margin: 0;
+  padding: 2rem 0;
   @media (max-width: 768px) {
     font-size: 1rem;
     width: 90%;
@@ -141,4 +183,32 @@ export const AboutListWrapper = styled.ul`
 export const AboutList = styled.li`
   color: #fff;
   font-size: calc(1rem + ((1vw - 0.2rem) * 1));
+`;
+
+export const WhatTitle = styled(Title)`
+  font-size: 40px;
+`;
+
+export const WhatHeader = styled.div`
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #e0e0e0;
+  padding: 2rem 0;
+`;
+
+export const WhatImage = styled.div`
+  width: 367px;
+  height: 415px;
+  background: #201124;
+  box-shadow: -7px 6px 57px 6px rgba(172, 247, 128, 0.25);
+  border-radius: 10px;
+  background: url("/Frog.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+`;
+
+export const WhatContent = styled.div`
+  justify-content: center;
 `;

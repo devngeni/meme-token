@@ -1,46 +1,82 @@
 import {
   AboutCard,
+  AboutCardTitle,
   AboutContent,
   AboutGrid,
   AboutHeader,
+  AboutLeftItem,
+  AboutParagraph,
+  AboutRightItem,
   AboutText,
   AboutTitle,
   AboutWrapper,
   LineWrapper,
+  WhatHeader,
+  WhatImage,
+  WhatTitle,
 } from "./About.styles";
 import Line from "@/public/Lines";
-import Technomics from "@/public/Technomics";
+import Angel from "@/public/Angel.svg";
+import Bug from "@/public/Bug.svg";
+import Dat from "@/public/Dat.svg";
+import Image from "next/image";
 
 export default function AboutSection() {
   const aboutData = [
     {
-      title:
-        "At <span>BOB PEPE</span>, we believe that investing should be thrilling, not boring. That’s why we’ve created a token that’s designed for people who want to take risks, have fun, and maybe even get a little bit rekted along the way.",
+      image: Bug,
+      title: "NFT minting",
+      text: "As an early supporter, you can participate in our NFT minting process. We have <span>15,000 NFTs</span> available for sale",
     },
     {
-      title:
-        "So if you’re tired of playing it safe and want to join the craziest ride in the crypto world, then <span>BOB PEPE</span> is the token for you. With us, you can rekt your portfolio and embrace the chaos of the market.",
+      image: Angel,
+      title: "Multiple NFT Purchase",
+      text: "Each NFT is priced at <span>$0.66</span>, and each wallet can purchase up to <span>15 NFTs</span>",
     },
     {
-      title:
-        "Join the <span>BOB PEPE AI</span> army today and REKTify you portfolio! Remember – it’s not about the destination, it’s about the rekted journey.",
+      image: Dat,
+      title: "Liquidity for Support",
+      text: "Our NFT sale target is <span>$9,900</span>, which will be added to our liquidity pool to support the growth of our community.",
     },
   ];
   return (
     <AboutWrapper>
-      <AboutTitle>WELCOME TO BOB PEPE AI</AboutTitle>
-      <AboutHeader>This is the about section</AboutHeader>
+      <AboutTitle>Experience the power of BOB PEPE AI</AboutTitle>
+      <AboutParagraph>
+        Join us today to experience the power of BOB PEPE AI and revolutionize
+        your trading experience.
+      </AboutParagraph>
+      <AboutHeader>How to Participate</AboutHeader>
       <AboutGrid>
-        {aboutData.map((data) => (
-          <AboutContent key={data.title}>
+        {aboutData.map((data, index) => (
+          <AboutContent key={index}>
             <AboutCard>
-              <AboutText dangerouslySetInnerHTML={{ __html: data.title }} />
+              <Image src={data.image} alt={data.image} />
+              <AboutCardTitle>{data.title}</AboutCardTitle>
+              <AboutText dangerouslySetInnerHTML={{ __html: data.text }} />
             </AboutCard>
-            <LineWrapper>
-              <Line />
-            </LineWrapper>
           </AboutContent>
         ))}
+      </AboutGrid>
+      <AboutGrid>
+        <AboutLeftItem>
+          <AboutTitle style={{ textAlign: "start" }}>What is</AboutTitle>
+          <WhatTitle>BOB PEPE AI?</WhatTitle>
+          <WhatHeader>
+            Bob Pepe AI is a community driven, fair launched DeFi Token. Three
+            simple functions occur during each trade: NFT minting, Airdrop, Buy
+            tokens
+          </WhatHeader>
+
+          <WhatHeader>
+            Say goodbye to mundane investments and hello to the excitement of
+            BOB PEPE AI. We're here to make investing an adrenaline-fueled ride,
+            Investing should be thrilling, not boring.
+          </WhatHeader>
+        </AboutLeftItem>
+        <AboutRightItem>
+          <WhatImage />
+        </AboutRightItem>
       </AboutGrid>
     </AboutWrapper>
   );

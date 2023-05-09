@@ -57,7 +57,18 @@ export default function App({ Component, pageProps }: AppProps) {
           </GlobalProvider>
         </WagmiConfig>
       ) : null}
-      <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
+      <Web3Modal
+        projectId={projectId}
+        ethereumClient={ethereumClient}
+        themeVariables={{
+          "--w3m-font-family": "Space Mono, monospace",
+          "--w3m-accent-color": "#83F7A3",
+          "--w3m-background-color": "#ACF780",
+          "--w3m-background-border-radius": "10px",
+          "--w3m-accent-fill-color": "#000",
+          "--w3m-background-image-url": "none",
+        }}
+      />
       <Toaster
         toastOptions={{
           style: {

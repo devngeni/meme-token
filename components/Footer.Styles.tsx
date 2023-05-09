@@ -6,7 +6,7 @@ export const FooterWrapper = styled.footer`
   height: 100%;
   display: flex;
   justify-content: center;
-  background: #1f2117;
+  background: #201124;
 `;
 export const FooterContainer = styled.div`
   width: 80%;

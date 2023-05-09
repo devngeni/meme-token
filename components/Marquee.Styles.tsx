@@ -1,7 +1,7 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 export const MarqueeContainer = styled.div`
-  background: linear-gradient(180deg, #040d21 0%, #040d21 100%);
+  background: #49a261;
   overflow-x: hidden;
   width: 100%;
   margin: 2em 0 0 0;
