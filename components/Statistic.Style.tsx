@@ -73,9 +73,42 @@ export const StaticText = styled.div`
   gap: 1rem;
 `;
 export const StaticAdress = styled.div`
-  color: rgb(23, 243, 221);
-  font-size: calc(1rem + ((1vw - 0.2rem) * 1));
-  flex-wrap: nowrap;
+flex-wrap: nowrap;
+cursor: pointer;
+font-size: 1rem;
+display: flex;
+line-height: 2.5rem;
+a {
+    color: #21c0de;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+  }
+
+  a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #88d7cf;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  a:hover {
+    color: #88d7cf;
+  }
+
+  a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;

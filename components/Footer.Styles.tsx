@@ -84,6 +84,7 @@ export const FooterLink = styled.div`
   gap: 10px;
   span {
     color: rgb(161, 161, 161);
+    border-top: 1px solid rgb(161, 161, 161);
     font-size: 0.8rem;
   }
   a {

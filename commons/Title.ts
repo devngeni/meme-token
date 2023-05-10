@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Title = styled.h1`
-  font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-size: clamp(44px, calc(1.5rem + ((1vw - 7.68px) * 3.4722)), 64px);
   line-height: 70px;

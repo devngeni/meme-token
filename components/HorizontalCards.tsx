@@ -39,7 +39,6 @@ const SVGImage = styled.div`
 `;
 
 const Title = styled.h2`
-  font-family: "Kanit";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;

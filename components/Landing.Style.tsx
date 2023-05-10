@@ -74,7 +74,6 @@ export const LandingGrid = styled.div`
 `;
 
 export const LandingHeader = styled.div`
-  font-family: "Kanit";
   font-weight: 700;
   font-size: 64px;
   line-height: 70px;
@@ -84,5 +83,36 @@ export const LandingText = styled.div`
   font-weight: 400;
   font-size: 21px;
   line-height: 30px;
+  color: #ffffff;
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+`;
+export const Button = styled.button`
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 32px;
+  gap: 10px;
+  width: 219px;
+  height: 57px;
+  font-weight: 400;
+  font-size: 18px;
+  background: linear-gradient(264.66deg, #83f7a3 19.25%, #acf780 95.17%);
+  border: 0.5px solid #e8e8e8;
+  box-shadow: 1px 1px 0px #000000;
+  border-radius: 10px;
+  color: #201124;
+  border: none;
+  cursor: pointer;
+`;
+export const Button2 = styled(Button)`
+  background: rgba(172, 247, 128, 0.05);
+  border: 0.5px solid #e8e8e8;
   color: #ffffff;
 `;

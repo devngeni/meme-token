@@ -1,5 +1,8 @@
 import { Title } from "@/commons";
 import {
+  Button,
+  Button2,
+  ButtonWrapper,
   LandingContainer,
   LandingContent,
   LandingGrid,
@@ -20,6 +23,10 @@ export default function LandingSection() {
             airdroppedAll users must register the form to participate in the
             Airdrop.
           </LandingText>
+          <ButtonWrapper>
+            <Button>Claim</Button>
+            <Button2>Join Wishlist</Button2>
+          </ButtonWrapper>
         </LandingContent>
         <LandingGrid />
       </LandingContainer>

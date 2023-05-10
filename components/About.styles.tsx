@@ -44,7 +44,6 @@ export const AboutContainer = styled.div`
   }
 `;
 export const AboutTitle = styled(Title)`
-  font-family: "Kanit";
   font-weight: 700;
   font-size: 40px;
   line-height: 44px;
@@ -85,7 +84,6 @@ export const AboutGrid = styled.div`
   }
 `;
 export const AboutCardTitle = styled.div`
-  font-family: "Kanit";
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;

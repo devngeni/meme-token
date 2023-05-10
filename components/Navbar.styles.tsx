@@ -35,7 +35,6 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavbarTitle = styled(Title)`
-  font-family: "Kanit";
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   text-align: left;
   margin: 0;
@@ -54,7 +53,6 @@ export const NavbarMenu = styled.div`
 `;
 
 export const NavbarMenuItemLink = styled.div`
-  font-family: "Kanit";
   font-weight: 400;
   line-height: 27px;
   color: #75d88a;

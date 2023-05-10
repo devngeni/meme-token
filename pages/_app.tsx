@@ -61,7 +61,7 @@ export default function App({ Component, pageProps }: AppProps) {
         projectId={projectId}
         ethereumClient={ethereumClient}
         themeVariables={{
-          "--w3m-font-family": "Space Mono, monospace",
+          "--w3m-font-family": "Kanit, sans-serif",
           "--w3m-accent-color": "#83F7A3",
           "--w3m-background-color": "#ACF780",
           "--w3m-background-border-radius": "10px",

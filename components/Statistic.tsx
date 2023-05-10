@@ -29,7 +29,15 @@ export default function StatisticSection() {
           </TextWrapper>
           <StaticText>
             <StaticHeader>Destroyed Address</StaticHeader>
-            <StaticAdress>0x000000****0dEaD ↗</StaticAdress>
+            <StaticAdress>
+              <a
+                href="https://arbiscan.io/address/0xd9a5f0164d3e707bca2c6b82c5b987776261b770#code"
+                rel={"noreferrer"}
+                target={"_blank"}
+              >
+                0xd9A5f0164D3E707Bca2c6B82C5b987776261B770↗
+              </a>
+            </StaticAdress>
           </StaticText>
         </StaticBody>
         <StaticImage />
