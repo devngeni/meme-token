@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styled from "styled-components";
@@ -83,32 +83,33 @@ const cardInfo = [
 ];
 
 export default function IndexPage() {
-    useEffect(() => {
-        let ctx = gsap.context(() => {
-          const sections = gsap.utils.toArray(".panel");
-          gsap.to(sections, {
-            xPercent: -100 * (sections.length - 1),
-            ease: "none",
-            scrollTrigger: {
-              trigger: ".container",
-              pin: true,
-              invalidateOnRefresh: true,
-              anticipatePin: 1,
-              scrub: 1.23,
-              end: () =>
-                "+=" +
-                (document.querySelector(".container") as HTMLElement).offsetWidth,
-            },
-          });
-        });
-    
-        return () => {
-          ctx.revert();
-        };
-      }, []);
+  const horizontalSection: any = useRef();
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      const sections = gsap.utils.toArray(".panel");
+      gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: horizontalSection.current,
+          pin: true,
+          invalidateOnRefresh: true,
+          anticipatePin: 1,
+          scrub: 1.23,
+          end: () =>
+            "+=" +
+            (document.querySelector(".container") as HTMLElement).offsetWidth,
+        },
+      });
+    });
+
+    return () => {
+      ctx.revert();
+    };
+  }, []);
 
   return (
-    <Container className="container">
+    <Container className="container" ref={horizontalSection}>
       <Wrapper>
         {cardInfo.map((info, index) => (
           <Card
