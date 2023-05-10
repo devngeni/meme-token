@@ -73,18 +73,20 @@ export const StaticText = styled.div`
   gap: 1rem;
 `;
 export const StaticAdress = styled.div`
-flex-wrap: nowrap;
-cursor: pointer;
-font-size: 1rem;
-display: flex;
-line-height: 2.5rem;
-a {
+  flex-wrap: nowrap;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  line-height: 2.5rem;
+  a {
     color: #21c0de;
     position: relative;
     display: flex;
     align-items: center;
     transition: 0.2s ease-in-out;
     text-decoration: none;
+    text-align: justify;
+    font-size: clamp(0.8rem, calc(0.5rem + ((1vw - 0.225rem) * 0.5128)), 1rem);
   }
 
   a:after {
@@ -114,7 +116,6 @@ a {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    font-size: 0.5rem;
   }
 `;
 export const StaticImage = styled.div`

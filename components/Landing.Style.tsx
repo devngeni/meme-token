@@ -64,7 +64,7 @@ export const LandingContent = styled.div`
   @media (max-width: 768px) {
     width: 90%;
     padding: 20px;
-    gap: 1rem;
+    gap: 0;
   }
 `;
 
@@ -93,15 +93,17 @@ export const LandingHeader = styled.div`
   @media (max-width: 768px) {
     text-align: center;
     line-height: 40px;
+    padding: 10px 0;
   }
 `;
 export const LandingText = styled.div`
   font-weight: 400;
   font-size: 21px;
   line-height: 30px;
-  color: #ffffff;
+  color: #e0e0e0;
   @media (max-width: 768px) {
     text-align: center;
+    padding: 1rem 0;
   }
 `;
 
