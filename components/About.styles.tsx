@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { LandingText } from "./Landing.Style";
 export const AboutWrapper = styled.section`
   width: 100%;
+  height: 100%;
   padding: 4rem 0;
   position: relative;
   display: flex;
@@ -34,7 +35,7 @@ export const AboutWrapper = styled.section`
 `;
 export const AboutContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
