@@ -1,3 +1,4 @@
+import { Title } from "@/commons";
 import styled, { keyframes } from "styled-components";
 
 export const MarqueeContainer = styled.div`
@@ -41,9 +42,9 @@ export const MarqueeItem = styled.div`
   flex-direction: column;
 `;
 
-export const MarqueeTitle = styled.div`
-  color: #fff;
-  font-size: 1.5rem;
+export const MarqueeTitle = styled(Title)`
+  font-size: 3rem;
+  padding: 0 1rem;
 `;
 
 export const MarqueeText = styled.div`
