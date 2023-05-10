@@ -18,7 +18,7 @@ const Card = styled.div`
   box-sizing: border-box;
   width: 498px;
   height: 459px;
-  background: #201124;
+  backdrop-filter: blur(150px);
   border-radius: 10px;
   flex: 0 0 auto;
   padding: 20px;
@@ -28,7 +28,6 @@ const Card = styled.div`
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-
   @media (max-width: 768px) {
     width: 40%;
     height: auto;

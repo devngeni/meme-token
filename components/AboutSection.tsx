@@ -12,7 +12,6 @@ import {
   AboutText,
   AboutTitle,
   AboutWrapper,
-  LineWrapper,
   WhatHeader,
   WhatImage,
   WhatTitle,
@@ -64,7 +63,7 @@ export default function AboutSection() {
         </AboutGrid>
         <AboutGrid>
           <AboutLeftItem>
-            <AboutTitle style={{ textAlign: "start" }}>What is</AboutTitle>
+            <AboutRightItem>What is</AboutRightItem>
             <WhatTitle>BOB PEPE AI?</WhatTitle>
             <WhatHeader>
               Bob Pepe AI is a community driven, fair launched DeFi Token. Three

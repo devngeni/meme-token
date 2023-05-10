@@ -183,7 +183,12 @@ export const AboutLeftItem = styled.div`
   flex-wrap: wrap;
   width: 100%;
 `;
-export const AboutRightItem = styled.div``;
+export const AboutRightItem = styled(AboutTitle)`
+text-align: left;
+@media (max-width: 768px) {
+  text-align: center;
+}
+`;
 export const EconomicsContainer = styled(AboutContainer)`
   width: 80%;
   display: flex;

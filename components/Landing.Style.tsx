@@ -42,6 +42,12 @@ export const LandingContainer = styled.div`
   }
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    &::before {
+      background: url("/BobGun.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
   }
 `;
 
@@ -54,8 +60,11 @@ export const LandingContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  backdrop-filter: blur(50px);
   @media (max-width: 768px) {
-    width: 100%;
+    width: 90%;
+    padding: 20px;
+    gap: 1rem;
   }
 `;
 
@@ -71,6 +80,9 @@ export const LandingGrid = styled.div`
     rgba(152, 221, 78, 0.5) 0%,
     rgba(6, 8, 24, 0) 100%
   );
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const LandingHeader = styled.div`
@@ -80,6 +92,7 @@ export const LandingHeader = styled.div`
   color: #ffffff;
   @media (max-width: 768px) {
     text-align: center;
+    line-height: 40px;
   }
 `;
 export const LandingText = styled.div`
@@ -87,7 +100,9 @@ export const LandingText = styled.div`
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
-  text-align: center;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
@@ -118,6 +133,12 @@ export const Button = styled.button`
   color: #201124;
   border: none;
   cursor: pointer;
+  &:hover {
+    background: rgba(172, 247, 128, 0.05);
+    border: 0.5px solid #e8e8e8;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+  }
   @media (max-width: 768px) {
     width: 90%;
   }
@@ -126,4 +147,9 @@ export const Button2 = styled(Button)`
   background: rgba(172, 247, 128, 0.05);
   border: 0.5px solid #e8e8e8;
   color: #ffffff;
+  backdrop-filter: blur(10px);
+  &:hover {
+    background: linear-gradient(264.66deg, #83f7a3 19.25%, #acf780 95.17%);
+    color: #201124;
+  }
 `;
