@@ -113,10 +113,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
+    font-size: 0.5rem;
   }
 `;
 export const StaticImage = styled.div`
-  width: 50%;
+  width: 100%;
   height: 100%;
   background: url("/frogpepe.png");
   background-size: contain;

@@ -55,7 +55,7 @@ export const LandingContent = styled.div`
   flex-direction: column;
   gap: 2rem;
   @media (max-width: 768px) {
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -75,21 +75,29 @@ export const LandingGrid = styled.div`
 
 export const LandingHeader = styled.div`
   font-weight: 700;
-  font-size: 64px;
+  font-size: clamp(24px, calc(1.5rem + ((1vw - 7.68px) * 3.4722)), 64px);
   line-height: 70px;
   color: #ffffff;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 export const LandingText = styled.div`
   font-weight: 400;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
+  text-align: center;
 `;
 
 export const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const Button = styled.button`
   box-sizing: border-box;
@@ -110,6 +118,9 @@ export const Button = styled.button`
   color: #201124;
   border: none;
   cursor: pointer;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 export const Button2 = styled(Button)`
   background: rgba(172, 247, 128, 0.05);

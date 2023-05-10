@@ -8,9 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 const Container = styled.div`
   display: flex;
   width: 100%;
-  height: 100vh;
   overflow-x: hidden;
   background: url("/Mesh.svg");
+  height: 100vh;
+  overflow: hidden;
 `;
 
 const Card = styled.div`
@@ -27,6 +28,12 @@ const Card = styled.div`
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 40%;
+    height: auto;
+    margin: 10px auto;
+  }
 `;
 
 const SVGImage = styled.div`
@@ -36,6 +43,11 @@ const SVGImage = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 200px;
+  }
 `;
 
 const Title = styled.h2`
@@ -72,6 +84,11 @@ const Wrapper = styled.div`
   gap: 2rem;
   justify-content: space-evenly;
   padding-left: 20vw;
+
+  @media (max-width: 768px) {
+    padding-right: 10vw;
+    padding-left: 90vw;
+  }
 `;
 
 const cardInfo = [
@@ -84,28 +101,51 @@ const cardInfo = [
 export default function IndexPage() {
   const horizontalSection: any = useRef();
   useEffect(() => {
-    let ctx = gsap.context(() => {
-      const sections = gsap.utils.toArray(".panel");
-      gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: horizontalSection.current,
-          pin: true,
-          invalidateOnRefresh: true,
-          anticipatePin: 1,
-          scrub: 1.23,
-          end: () =>
-            "+=" +
-            (document.querySelector(".container") as HTMLElement).offsetWidth,
-        },
-      });
+    ScrollTrigger.matchMedia({
+      // desktop
+      "(min-width: 769px)": function () {
+        let ctx = gsap.context(() => {
+          const sections = gsap.utils.toArray(".panel");
+          gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+              trigger: horizontalSection.current,
+              pin: true,
+              invalidateOnRefresh: true,
+              anticipatePin: 1,
+              scrub: 1.23,
+              end: () =>
+                "+=" +
+                (document.querySelector(".container") as HTMLElement).offsetWidth,
+            },
+          });
+        });
+      },
+      // mobile
+      "(max-width: 768px)": function () {
+        const sections: any = gsap.utils.toArray(".panel");
+        const totalSectionsWidth: any = sections.reduce((acc: any, section: any) => acc + section.offsetWidth, 0);
+        const viewportWidth = window.innerWidth;
+
+        gsap.to(sections, {
+          xPercent: -200 * (totalSectionsWidth / viewportWidth - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: horizontalSection.current,
+            pin: true,
+            invalidateOnRefresh: true,
+            anticipatePin: 1,
+            scrub: 1,
+            end: () =>
+              "+=" + horizontalSection.current.offsetWidth,
+          },
+        });
+      },
     });
 
-    return () => {
-      ctx.revert();
-    };
   }, []);
+
 
   return (
     <Container className="container" ref={horizontalSection}>
@@ -114,7 +154,7 @@ export default function IndexPage() {
           <Card
             className="panel"
             key={index}
-            style={{ marginRight: index === cardInfo.length - 1 ? 0 : 10 }}
+            style={{ marginRight: index === cardInfo.length - 1 ? 0 : "2rem" }}
           >
             <SVGImage />
             <Title>{info.title}</Title>

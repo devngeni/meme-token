@@ -234,6 +234,9 @@ export const WhatImage = styled.div`
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const WhatContent = styled.div`
