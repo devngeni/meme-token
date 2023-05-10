@@ -75,7 +75,6 @@ export const FooterContent = styled.div`
   }
 `;
 export const FooterLink = styled.div`
-  cursor: pointer;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 2.5rem;
@@ -83,8 +82,12 @@ export const FooterLink = styled.div`
   align-items: center;
   flex-direction: row;
   gap: 10px;
-
+  span {
+    color: rgb(161, 161, 161);
+    font-size: 0.8rem;
+  }
   a {
+    cursor: pointer;
     position: relative;
     display: flex;
     align-items: center;

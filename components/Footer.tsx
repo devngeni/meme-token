@@ -25,6 +25,11 @@ export default function Footer() {
           <FooterText>
             BOB PEPE AI is a community driven, fair launched DeFi Token.
           </FooterText>
+          <FooterLink>
+            <span>
+              &copy;{new Date().getFullYear()} BOB PEPE AI. All rights reserved.
+            </span>
+          </FooterLink>
         </FooterBody>
         <FooterContent>
           <FooterBody>

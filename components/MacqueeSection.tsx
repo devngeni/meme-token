@@ -9,31 +9,31 @@ import {
 export default function MarqueeSection() {
   const marqueeData = [
     {
-      title: "492929.12",
+      title: "Comming Soon",
       text: "BOB PEPE Accumulated $ARTS Burned",
     },
     {
-      title: "202 746T",
+      title: "Comming Soon",
       text: "BOB PEPE Total Supply",
     },
     {
-      title: "7207.74T",
+      title: "Comming Soon",
       text: "BOB PEPE Total Burn",
     },
     {
-      title: "202 746T",
+      title: "Comming Soon",
       text: "BOB PEPE Accumulated $ARB",
     },
     {
-      title: "395,810T",
+      title: "Comming Soon",
       text: "BOB PEPE Trading Volume",
     },
     {
-      title: "202,748T",
+      title: "Comming Soon",
       text: "BOB PEPE Currency Supply",
     },
     {
-      title: "571385.23",
+      title: "Comming Soon",
       text: "Lucky Drop Reward $ARB",
     },
   ];
@@ -42,7 +42,6 @@ export default function MarqueeSection() {
     marqueeData.map((item, index) => (
       <MarqueeItem key={index} className="marquee__content">
         <MarqueeTitle>{item.title}</MarqueeTitle>
-        <MarqueeText>{item.text}</MarqueeText>
       </MarqueeItem>
     ));
 

@@ -33,7 +33,7 @@ export const LandingContainer = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("/BobGun.svg");
+    background: url("/BobGun.svg") #000;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

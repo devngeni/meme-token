@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 export const MarqueeContainer = styled.div`
-  background: #49a261;
+  background: #000;
   overflow-x: hidden;
   width: 100%;
   margin: 2em 0 0 0;
@@ -42,11 +42,11 @@ export const MarqueeItem = styled.div`
 `;
 
 export const MarqueeTitle = styled.div`
-  color: #88d7cf;
+  color: #fff;
   font-size: 1.5rem;
 `;
 
 export const MarqueeText = styled.div`
-  color: #9e9e9e;
+  color: #000;
   font-size: 1rem;
 `;

@@ -17,12 +17,10 @@ import {
   WhatImage,
   WhatTitle,
 } from "./About.styles";
-import Line from "@/public/Lines";
 import Angel from "@/public/Angel.svg";
 import Bug from "@/public/Bug.svg";
 import Dat from "@/public/Dat.svg";
 import Image from "next/image";
-import { LandingContent } from "./Landing.Style";
 
 export default function AboutSection() {
   const aboutData = [

@@ -83,24 +83,29 @@ const cardInfo = [
 ];
 
 export default function IndexPage() {
-  useEffect(() => {
-    const sections = gsap.utils.toArray(".panel");
-
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".container",
-        pin: true,
-        invalidateOnRefresh: true,
-        anticipatePin: 1,
-        scrub: 1.23,
-        end: () =>
-          "+=" +
-          (document.querySelector(".container") as HTMLElement).offsetWidth,
-      },
-    });
-  }, []);
+    useEffect(() => {
+        let ctx = gsap.context(() => {
+          const sections = gsap.utils.toArray(".panel");
+          gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".container",
+              pin: true,
+              invalidateOnRefresh: true,
+              anticipatePin: 1,
+              scrub: 1.23,
+              end: () =>
+                "+=" +
+                (document.querySelector(".container") as HTMLElement).offsetWidth,
+            },
+          });
+        });
+    
+        return () => {
+          ctx.revert();
+        };
+      }, []);
 
   return (
     <Container className="container">
