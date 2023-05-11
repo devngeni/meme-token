@@ -1,5 +1,4 @@
 import { Footer, Navbar } from "@/components";
-import { Html } from "next/document";
 import Head from "next/head";
 
 interface LayoutProps {
