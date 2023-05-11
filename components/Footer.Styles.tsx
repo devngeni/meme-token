@@ -151,7 +151,7 @@ export const FooterIcon = styled.div`
   cursor: pointer;
   &:hover {
     path {
-      fill: #88d7cf;
+      fill: #fff;
       transition: 0.2s ease-in-out;
     }
   }

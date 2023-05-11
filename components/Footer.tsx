@@ -1,4 +1,3 @@
-import LinkedIn from "@/public/LinkedIn";
 import {
   FooterBody,
   FooterContainer,
@@ -11,6 +10,7 @@ import {
   FooterTile,
   FooterWrapper,
 } from "./Footer.Styles";
+import Telegram from "@/public/Telegram";
 import Twitter from "@/public/Twitter";
 import Youtube from "@/public/Youtube";
 import Discord from "@/public/Discord";
@@ -81,10 +81,7 @@ export default function Footer() {
               <Twitter />
             </FooterIcon>
             <FooterIcon>
-              <LinkedIn />
-            </FooterIcon>
-            <FooterIcon>
-              <Youtube />
+              <Telegram />
             </FooterIcon>
             <FooterIcon>
               <Discord />
