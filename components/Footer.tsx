@@ -12,7 +12,6 @@ import {
 } from "./Footer.Styles";
 import Telegram from "@/public/Telegram";
 import Twitter from "@/public/Twitter";
-import Youtube from "@/public/Youtube";
 import Discord from "@/public/Discord";
 import Link from "next/link";
 

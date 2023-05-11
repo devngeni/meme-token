@@ -59,14 +59,17 @@ export const NavbarMenuItemLink = styled.div`
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   cursor: pointer;
   position: relative;
-  &:hover {
-    color: #9e9e9e;
-    transition: all 0.5s ease-in-out;
-    background: #9e9e9e;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    a {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: 0.2s ease-in-out;
+      text-decoration: none;
+       color: #75d88a;
+    }
 
-    &:after {
+    a:after {
       content: "";
       position: absolute;
       width: 100%;
@@ -74,13 +77,16 @@ export const NavbarMenuItemLink = styled.div`
       height: 2px;
       bottom: 0;
       left: 0;
-      right: 0;
       background-color: #88d7cf;
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
     }
 
-    &:hover:after {
+    a:hover {
+      color:#fff;
+    }
+
+    a:hover:after {
       transform: scaleX(1);
       transform-origin: bottom left;
     }

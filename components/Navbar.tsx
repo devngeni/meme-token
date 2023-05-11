@@ -10,6 +10,7 @@ import {
 import { toast } from "react-hot-toast";
 import { Web3Button, Web3NetworkSwitch } from "@web3modal/react";
 import GlobalContext from "@/context/GlobalContext";
+import Link from "next/link";
 
 export default function Navbar() {
   const { isMobile } = useContext(GlobalContext);
@@ -22,10 +23,10 @@ export default function Navbar() {
         <NavbarTitle>🚀BOB PEPE AI</NavbarTitle>
         <NavbarMenu>
           <NavbarMenuItemLink onClick={() => connectToWallet()}>
-            AirDrop
+            <Link href="/">Home</Link>
           </NavbarMenuItemLink>
           <NavbarMenuItemLink onClick={() => connectToWallet()}>
-            Earn
+            AirDrop
           </NavbarMenuItemLink>
           <NavbarMenuItemLink onClick={() => connectToWallet()}>
             LP
@@ -33,8 +34,8 @@ export default function Navbar() {
           <NavbarMenuItemLink onClick={() => connectToWallet()}>
             Buy
           </NavbarMenuItemLink>
-          <NavbarMenuItemLink onClick={() => connectToWallet()}>
-            NFT
+          <NavbarMenuItemLink>
+            <Link href="/mintnft">Stake</Link>
           </NavbarMenuItemLink>
         </NavbarMenu>
         <NavbarMenuItem>

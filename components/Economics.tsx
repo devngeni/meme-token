@@ -1,15 +1,10 @@
-import Technomics from "@/public/Technomics";
 import { useContext } from "react";
 import {
-  AboutContainer,
-  AboutGrid,
   AboutImage,
-  AboutLeftItem,
   AboutList,
   AboutListWrapper,
   AboutRightItem,
   AboutTitle,
-  AboutWrapper,
   EconomicsContainer,
   EconomicsWrapper,
   WhatContent,
