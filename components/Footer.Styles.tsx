@@ -137,15 +137,7 @@ export const FooterIconWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
-  @media (max-width: 1200px) {
-    gap: 1rem;
-  }
-  @media (max-width: 768px) {
-    gap: 1rem;
-    backdrop-filter: blur(10px);
-    border-radius: 22px;
-    padding: 0.5rem 0;
-  }
+  padding: 1rem 0;
 `;
 export const FooterIcon = styled.div`
   cursor: pointer;
