@@ -73,8 +73,9 @@ export default function Footer() {
         </FooterContent>
         <FooterBody>
           <FooterText>
-            The secret weapon that humans have over AI is &#34;intuition.&#34;
-            Your intuition tells you to join our great community.
+            Can you feel it? That&sbquo;s your intuition nudging you towards a crew of
+            inventive trailblazers. Tune in, answer the call, and join our fun,
+            transformative community!
           </FooterText>
           <FooterIconWrapper style={{ justifyContent: "start" }}>
             <FooterIcon>
