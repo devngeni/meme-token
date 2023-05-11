@@ -138,7 +138,7 @@ export const Button = styled.button`
   &:hover {
     background: rgba(172, 247, 128, 0.05);
     border: 0.5px solid #e8e8e8;
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
     color: #fff;
   }
   @media (max-width: 768px) {
