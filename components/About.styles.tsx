@@ -10,7 +10,6 @@ export const AboutWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  backdrop-filter: blur(15px);
   background: url("Glowb.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +100,6 @@ export const AboutCardTitle = styled.div`
 export const AboutCard = styled.div`
   background: #201124;
   border-radius: 10px;
-  backdrop-filter: blur(17px);
   padding: 2rem;
   height: 317px;
   display: flex;
