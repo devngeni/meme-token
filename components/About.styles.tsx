@@ -31,6 +31,11 @@ export const AboutWrapper = styled.section`
   }
   @media (max-width: 768px) {
     padding: 2rem 0;
+    height: 300vh;
+  }
+  @media (max-width: 380px) {
+    padding: 2rem 0;
+    height: 380vh;
   }
 `;
 export const AboutContainer = styled.div`
