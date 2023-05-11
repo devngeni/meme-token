@@ -57,7 +57,6 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
   @media (max-width: 768px) {
     width: 100%;
     display: grid;
