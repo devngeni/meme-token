@@ -155,3 +155,10 @@ export const Button2 = styled(Button)`
     color: #201124;
   }
 `;
+
+export const Button3 = styled(Button)`
+  width: 491px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+`;

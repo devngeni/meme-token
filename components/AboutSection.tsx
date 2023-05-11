@@ -20,6 +20,7 @@ import Angel from "@/public/Angel.svg";
 import Bug from "@/public/Bug.svg";
 import Dat from "@/public/Dat.svg";
 import Image from "next/image";
+import { Button3 } from "./Landing.Style";
 
 export default function AboutSection() {
   const aboutData = [
@@ -73,14 +74,24 @@ export default function AboutSection() {
 
             <WhatHeader>
               Say goodbye to mundane investments and hello to the excitement of
-              BOB PEPE AI. We&apos;re here to make investing an adrenaline-fueled
-              ride, Investing should be thrilling, not boring.
+              BOB PEPE AI. We&apos;re here to make investing an
+              adrenaline-fueled ride, Investing should be thrilling, not boring.
             </WhatHeader>
           </AboutLeftItem>
           <AboutRightItem>
             <WhatImage />
           </AboutRightItem>
         </AboutGrid>
+        <AboutLeft>
+          <AboutTitle>
+            Join us today to experience the power of BOB PEPE AI
+          </AboutTitle>
+          <AboutParagraph>
+            Join us today to experience the power of BOB PEPE AI and
+            revolutionize your trading experience.
+          </AboutParagraph>
+          <Button3>Sure</Button3>
+        </AboutLeft>
       </AboutContainer>
     </AboutWrapper>
   );

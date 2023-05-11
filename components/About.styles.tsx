@@ -31,12 +31,8 @@ export const AboutWrapper = styled.section`
   }
   @media (max-width: 768px) {
     padding: 2rem 0;
-    height: 300vh;
   }
-  @media (max-width: 380px) {
-    padding: 2rem 0;
-    height: 380vh;
-  }
+
 `;
 export const AboutContainer = styled.div`
   width: 100%;
@@ -172,7 +168,8 @@ export const AboutLeft = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 40%;
+  width: 25%;
+  padding: 2rem 0;
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
@@ -233,6 +230,9 @@ export const WhatHeader = styled.div`
   line-height: 24px;
   color: #e0e0e0;
   padding: 2rem 0;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const WhatImage = styled.div`
