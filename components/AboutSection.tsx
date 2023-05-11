@@ -16,9 +16,9 @@ import {
   WhatImage,
   WhatTitle,
 } from "./About.styles";
-import Angel from "@/public/Angel.svg";
-import Bug from "@/public/Bug.svg";
-import Dat from "@/public/Dat.svg";
+import Angel from "@/public/Angel.png";
+import Bug from "@/public/Bug.png";
+import Dat from "@/public/Dat.png";
 import Image from "next/image";
 import { Button3 } from "./Landing.Style";
 
@@ -55,7 +55,7 @@ export default function AboutSection() {
           {aboutData.map((data, index) => (
             <AboutContent key={index}>
               <AboutCard>
-                <Image src={data.image} alt={data.image} />
+                <Image src={data.image} alt={data.title} />
                 <AboutCardTitle>{data.title}</AboutCardTitle>
                 <AboutText dangerouslySetInnerHTML={{ __html: data.text }} />
               </AboutCard>
