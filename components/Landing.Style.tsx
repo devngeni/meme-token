@@ -158,6 +158,13 @@ export const Button2 = styled(Button)`
 
 export const Button3 = styled(Button)`
   width: 491px;
+  a {
+    text-decoration: none;
+    color: #201124;
+  }
+  a:hover {
+    color: #fff;
+  }
   @media (max-width: 768px) {
     width: 90%;
   }

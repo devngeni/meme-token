@@ -21,6 +21,7 @@ import Bug from "@/public/Bug.png";
 import Dat from "@/public/Dat.png";
 import Image from "next/image";
 import { Button3 } from "./Landing.Style";
+import Link from "next/link";
 
 export default function AboutSection() {
   const aboutData = [
@@ -90,7 +91,11 @@ export default function AboutSection() {
             Join us today to experience the power of BOB PEPE AI and
             revolutionize your trading experience.
           </AboutParagraph>
-          <Button3>Sure</Button3>
+          <Button3>
+            <Link href="https://opensea.io/collection/bob-pepe-ai-1" target="_blank">
+              Buy NFT
+            </Link>
+          </Button3>
         </AboutLeft>
       </AboutContainer>
     </AboutWrapper>
