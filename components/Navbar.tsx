@@ -32,7 +32,12 @@ export default function Navbar() {
             LP
           </NavbarMenuItemLink>
           <NavbarMenuItemLink onClick={() => connectToWallet()}>
-            Buy
+            <Link
+              href="https://opensea.io/collection/bob-pepe-ai-1"
+              target="_blank"
+            >
+              NFT
+            </Link>
           </NavbarMenuItemLink>
           <NavbarMenuItemLink>
             <Link href="/mintnft">Stake</Link>
